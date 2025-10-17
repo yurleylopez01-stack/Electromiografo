@@ -9610,6 +9610,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <groups>
 <schematic_group name="SP32" width="0.254" layer="94"/>
 <schematic_group name="IMAGEN" layer="94"/>
+<schematic_group name="FILTRO" layer="94"/>
 </groups>
 <parts>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9686,12 +9687,18 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="VSS5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VSS" device=""/>
 <part name="IC5" library="SamacSys_Parts" deviceset="REF2033AIDDCT" device=""/>
 <part name="IC1" library="SamacSys_Parts" deviceset="ESP32-S3-WROOM-1-N16R8" device=""/>
+<part name="IC10" library="SamacSys_Parts" deviceset="LMV321IDBVRG4" device=""/>
+<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
+<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
+<part name="GND17" library="PulseOximeterECG_AU" library_urn="urn:adsk.eagle:library:14846661" deviceset="GND" device=""/>
+<part name="+3V12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="GND18" library="PulseOximeterECG_AU" library_urn="urn:adsk.eagle:library:14846661" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="203.2" y="144.78" size="1.778" layer="95" rot="R90" grouprefs="SP32">FLASH</text>
-<text x="109.22" y="157.48" size="1.778" layer="95" grouprefs="SP32">OUT ADC</text>
+<text x="109.22" y="157.48" size="1.778" layer="95" grouprefs="SP32">OUTADC</text>
 <text x="109.22" y="149.86" size="1.778" layer="95" grouprefs="SP32">DAC1</text>
 <text x="109.22" y="147.32" size="1.778" layer="95" grouprefs="SP32">DAC2</text>
 <text x="109.22" y="144.78" size="1.778" layer="95" grouprefs="SP32">TOUCHPAD1</text>
@@ -9704,18 +9711,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="167.64" y="147.32" size="1.778" layer="95" grouprefs="SP32">RX</text>
 <text x="93.98" y="134.62" size="1.778" layer="95" rot="R90" grouprefs="SP32">REST</text>
 <text x="91.44" y="165.1" size="1.778" layer="95" grouprefs="SP32">RESET32</text>
-<text x="243.84" y="124.46" size="1.778" layer="95" rot="MR0" grouprefs="IMAGEN">OLED</text>
-<text x="233.68" y="119.38" size="1.778" layer="95" rot="MR0" grouprefs="IMAGEN">SDA</text>
-<text x="233.68" y="116.84" size="1.778" layer="95" rot="MR0" grouprefs="IMAGEN">SCL</text>
+<text x="187.96" y="86.36" size="1.778" layer="95" rot="MR0" grouprefs="IMAGEN">OLED</text>
+<text x="177.8" y="81.28" size="1.778" layer="95" rot="MR0" grouprefs="IMAGEN">SDA</text>
+<text x="177.8" y="78.74" size="1.778" layer="95" rot="MR0" grouprefs="IMAGEN">SCL</text>
 <wire x1="220.98" y1="231.14" x2="391.16" y2="231.14" width="0.1524" layer="94" style="longdash"/>
 <wire x1="391.16" y1="231.14" x2="391.16" y2="142.24" width="0.1524" layer="94" style="longdash"/>
 <wire x1="391.16" y1="142.24" x2="220.98" y2="142.24" width="0.1524" layer="94" style="longdash"/>
 <wire x1="220.98" y1="142.24" x2="220.98" y2="231.14" width="0.1524" layer="94" style="longdash"/>
-<wire x1="256.54" y1="129.54" x2="495.3" y2="129.54" width="0.1524" layer="94" style="longdash"/>
-<wire x1="495.3" y1="129.54" x2="495.3" y2="73.66" width="0.1524" layer="94" style="longdash"/>
-<wire x1="495.3" y1="73.66" x2="256.54" y2="73.66" width="0.1524" layer="94" style="longdash"/>
-<wire x1="256.54" y1="73.66" x2="256.54" y2="129.54" width="0.1524" layer="94" style="longdash"/>
-<text x="365.76" y="132.08" size="1.778" layer="94">FILTRO PASA BAJO</text>
 <wire x1="408.94" y1="175.26" x2="485.14" y2="175.26" width="0.1524" layer="94" style="longdash"/>
 <wire x1="485.14" y1="175.26" x2="485.14" y2="142.24" width="0.1524" layer="94" style="longdash"/>
 <wire x1="485.14" y1="142.24" x2="408.94" y2="142.24" width="0.1524" layer="94" style="longdash"/>
@@ -9728,13 +9730,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="414.02" y1="182.88" x2="414.02" y2="228.6" width="0.1524" layer="94" style="longdash"/>
 <text x="289.56" y="233.68" size="1.778" layer="94">Alimentacion y Regulacion</text>
 <frame x1="40.64" y1="38.1" x2="538.48" y2="276.86" columns="8" rows="5" layer="94" border-left="no" border-bottom="no"/>
-<text x="368.3" y="251.46" size="1.778" layer="94">1. Agregar un amplificador driver (antes del adc)
+<text x="368.3" y="251.46" size="1.778" layer="94">1. Agregar un amplificador driver (antes del adc)(listo)
 2. Agregar el REF2033(listo)
-3. Definir cuales son los pines D+ y D- del USB-C
+3. Definir cuales son los pines D+ y D- del USB-C(listo)
 4. Invertir el conector de la OLED(listo)
 5. Reemplazar el ESP32 por un ESP32-S3(listo)
 6. Verificar el SW(listo)</text>
 <text x="368.3" y="248.92" size="1.778" layer="94">7. Verificar el conector JST de la bateria</text>
+<text x="505.46" y="104.14" size="1.778" layer="95">OUTADC</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="162.56" y="106.68" smashed="yes" grouprefs="SP32">
@@ -9780,14 +9783,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="NAME" x="78.359" y="169.164" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="83.439" y="169.164" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="JP1" gate="A" x="238.76" y="114.3" smashed="yes" rot="MR0" grouprefs="IMAGEN">
-<attribute name="VALUE" x="245.11" y="106.68" size="1.778" layer="96" rot="MR0"/>
+<instance part="JP1" gate="A" x="182.88" y="76.2" smashed="yes" rot="MR0" grouprefs="IMAGEN">
+<attribute name="VALUE" x="189.23" y="68.58" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND5" gate="1" x="233.68" y="106.68" smashed="yes" rot="MR0" grouprefs="IMAGEN">
-<attribute name="VALUE" x="236.22" y="104.14" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND5" gate="1" x="177.8" y="68.58" smashed="yes" rot="MR0" grouprefs="IMAGEN">
+<attribute name="VALUE" x="180.34" y="66.04" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="+3V4" gate="G$1" x="220.98" y="119.38" smashed="yes" rot="MR0" grouprefs="IMAGEN">
-<attribute name="VALUE" x="223.52" y="114.3" size="1.778" layer="96" rot="MR90"/>
+<instance part="+3V4" gate="G$1" x="165.1" y="81.28" smashed="yes" rot="MR0" grouprefs="IMAGEN">
+<attribute name="VALUE" x="167.64" y="76.2" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="J1" gate="G$1" x="264.16" y="203.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="264.16" y="184.15" size="1.778" layer="95" rot="R270" align="center-left"/>
@@ -9871,83 +9874,83 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="SUPPLY1" gate="G$1" x="317.5" y="162.56" smashed="yes" rot="R270">
 <attribute name="VALUE" x="312.801" y="164.465" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="IC6" gate="G$1" x="299.72" y="106.68" smashed="yes">
-<attribute name="NAME" x="323.85" y="114.3" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="323.85" y="111.76" size="1.778" layer="96" align="center-left"/>
+<instance part="IC6" gate="G$1" x="276.86" y="104.14" smashed="yes" grouprefs="FILTRO">
+<attribute name="NAME" x="300.99" y="111.76" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="300.99" y="109.22" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="R5" gate="G$1" x="276.86" y="121.92" smashed="yes">
-<attribute name="NAME" x="273.05" y="123.4186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="273.05" y="118.618" size="1.778" layer="96"/>
+<instance part="R5" gate="G$1" x="254" y="119.38" smashed="yes" grouprefs="FILTRO">
+<attribute name="NAME" x="250.19" y="120.8786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="250.19" y="116.078" size="1.778" layer="96"/>
 </instance>
-<instance part="R6" gate="G$1" x="287.02" y="114.3" smashed="yes" rot="R90">
-<attribute name="NAME" x="285.5214" y="110.49" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="290.322" y="110.49" size="1.778" layer="96" rot="R90"/>
+<instance part="R6" gate="G$1" x="264.16" y="111.76" smashed="yes" rot="R90" grouprefs="FILTRO">
+<attribute name="NAME" x="262.6614" y="107.95" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="267.462" y="107.95" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C5" gate="G$1" x="287.02" y="99.06" smashed="yes">
-<attribute name="NAME" x="288.544" y="99.441" size="1.778" layer="95"/>
-<attribute name="VALUE" x="288.544" y="94.361" size="1.778" layer="96"/>
+<instance part="C5" gate="G$1" x="264.16" y="96.52" smashed="yes" grouprefs="FILTRO">
+<attribute name="NAME" x="265.684" y="96.901" size="1.778" layer="95"/>
+<attribute name="VALUE" x="265.684" y="91.821" size="1.778" layer="96"/>
 </instance>
-<instance part="C6" gate="G$1" x="309.88" y="121.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="309.499" y="123.444" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="314.579" y="123.444" size="1.778" layer="96" rot="R90"/>
+<instance part="C6" gate="G$1" x="287.02" y="119.38" smashed="yes" rot="R90" grouprefs="FILTRO">
+<attribute name="NAME" x="286.639" y="120.904" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="291.719" y="120.904" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R7" gate="G$1" x="347.98" y="121.92" smashed="yes">
-<attribute name="NAME" x="344.17" y="123.4186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="344.17" y="118.618" size="1.778" layer="96"/>
+<instance part="R7" gate="G$1" x="325.12" y="119.38" smashed="yes" grouprefs="FILTRO">
+<attribute name="NAME" x="321.31" y="120.8786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="321.31" y="116.078" size="1.778" layer="96"/>
 </instance>
-<instance part="R8" gate="G$1" x="358.14" y="111.76" smashed="yes" rot="R90">
-<attribute name="NAME" x="356.6414" y="107.95" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="361.442" y="107.95" size="1.778" layer="96" rot="R90"/>
+<instance part="R8" gate="G$1" x="335.28" y="109.22" smashed="yes" rot="R90" grouprefs="FILTRO">
+<attribute name="NAME" x="333.7814" y="105.41" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="338.582" y="105.41" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="IC7" gate="G$1" x="370.84" y="104.14" smashed="yes">
-<attribute name="NAME" x="394.97" y="111.76" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="394.97" y="109.22" size="1.778" layer="96" align="center-left"/>
+<instance part="IC7" gate="G$1" x="347.98" y="101.6" smashed="yes" grouprefs="FILTRO">
+<attribute name="NAME" x="372.11" y="109.22" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="372.11" y="106.68" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="C7" gate="G$1" x="358.14" y="99.06" smashed="yes">
-<attribute name="NAME" x="359.664" y="99.441" size="1.778" layer="95"/>
-<attribute name="VALUE" x="359.664" y="94.361" size="1.778" layer="96"/>
+<instance part="C7" gate="G$1" x="335.28" y="96.52" smashed="yes" grouprefs="FILTRO">
+<attribute name="NAME" x="336.804" y="96.901" size="1.778" layer="95"/>
+<attribute name="VALUE" x="336.804" y="91.821" size="1.778" layer="96"/>
 </instance>
-<instance part="C8" gate="G$1" x="378.46" y="121.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="378.079" y="123.444" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="383.159" y="123.444" size="1.778" layer="96" rot="R90"/>
+<instance part="C8" gate="G$1" x="355.6" y="119.38" smashed="yes" rot="R90" grouprefs="FILTRO">
+<attribute name="NAME" x="355.219" y="120.904" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="360.299" y="120.904" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="IC8" gate="G$1" x="439.42" y="104.14" smashed="yes">
-<attribute name="NAME" x="463.55" y="111.76" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="463.55" y="109.22" size="1.778" layer="96" align="center-left"/>
+<instance part="IC8" gate="G$1" x="416.56" y="101.6" smashed="yes" grouprefs="FILTRO">
+<attribute name="NAME" x="440.69" y="109.22" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="440.69" y="106.68" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="R9" gate="G$1" x="419.1" y="121.92" smashed="yes">
-<attribute name="NAME" x="415.29" y="123.4186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="415.29" y="118.618" size="1.778" layer="96"/>
+<instance part="R9" gate="G$1" x="396.24" y="119.38" smashed="yes" grouprefs="FILTRO">
+<attribute name="NAME" x="392.43" y="120.8786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="392.43" y="116.078" size="1.778" layer="96"/>
 </instance>
-<instance part="R10" gate="G$1" x="429.26" y="111.76" smashed="yes" rot="R90">
-<attribute name="NAME" x="427.7614" y="107.95" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="432.562" y="107.95" size="1.778" layer="96" rot="R90"/>
+<instance part="R10" gate="G$1" x="406.4" y="109.22" smashed="yes" rot="R90" grouprefs="FILTRO">
+<attribute name="NAME" x="404.9014" y="105.41" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="409.702" y="105.41" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C9" gate="G$1" x="447.04" y="121.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="446.659" y="123.444" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="451.739" y="123.444" size="1.778" layer="96" rot="R90"/>
+<instance part="C9" gate="G$1" x="424.18" y="119.38" smashed="yes" rot="R90" grouprefs="FILTRO">
+<attribute name="NAME" x="423.799" y="120.904" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="428.879" y="120.904" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C10" gate="G$1" x="429.26" y="96.52" smashed="yes" rot="R180">
-<attribute name="NAME" x="427.736" y="96.139" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="427.736" y="101.219" size="1.778" layer="96" rot="R180"/>
+<instance part="C10" gate="G$1" x="406.4" y="93.98" smashed="yes" rot="R180" grouprefs="FILTRO">
+<attribute name="NAME" x="404.876" y="93.599" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="404.876" y="98.679" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND13" gate="1" x="434.34" y="81.28" smashed="yes">
-<attribute name="VALUE" x="431.8" y="78.74" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="411.48" y="78.74" smashed="yes" grouprefs="FILTRO">
+<attribute name="VALUE" x="408.94" y="76.2" size="1.778" layer="96"/>
 </instance>
-<instance part="GND14" gate="1" x="365.76" y="81.28" smashed="yes">
-<attribute name="VALUE" x="363.22" y="78.74" size="1.778" layer="96"/>
+<instance part="GND14" gate="1" x="342.9" y="78.74" smashed="yes" grouprefs="FILTRO">
+<attribute name="VALUE" x="340.36" y="76.2" size="1.778" layer="96"/>
 </instance>
-<instance part="GND15" gate="1" x="289.56" y="81.28" smashed="yes">
-<attribute name="VALUE" x="287.02" y="78.74" size="1.778" layer="96"/>
+<instance part="GND15" gate="1" x="266.7" y="78.74" smashed="yes" grouprefs="FILTRO">
+<attribute name="VALUE" x="264.16" y="76.2" size="1.778" layer="96"/>
 </instance>
-<instance part="+3V8" gate="G$1" x="342.9" y="104.14" smashed="yes" rot="R270">
-<attribute name="VALUE" x="337.82" y="106.68" size="1.778" layer="96"/>
+<instance part="+3V8" gate="G$1" x="320.04" y="101.6" smashed="yes" rot="R270" grouprefs="FILTRO">
+<attribute name="VALUE" x="314.96" y="104.14" size="1.778" layer="96"/>
 </instance>
-<instance part="+3V9" gate="G$1" x="414.02" y="101.6" smashed="yes" rot="R270">
-<attribute name="VALUE" x="408.94" y="104.14" size="1.778" layer="96"/>
+<instance part="+3V9" gate="G$1" x="391.16" y="99.06" smashed="yes" rot="R270" grouprefs="FILTRO">
+<attribute name="VALUE" x="386.08" y="101.6" size="1.778" layer="96"/>
 </instance>
-<instance part="+3V10" gate="G$1" x="485.14" y="101.6" smashed="yes" rot="R270">
-<attribute name="VALUE" x="480.06" y="104.14" size="1.778" layer="96"/>
+<instance part="+3V10" gate="G$1" x="462.28" y="99.06" smashed="yes" rot="R270" grouprefs="FILTRO">
+<attribute name="VALUE" x="457.2" y="101.6" size="1.778" layer="96"/>
 </instance>
 <instance part="IC9" gate="G$1" x="431.8" y="208.28" smashed="yes">
 <attribute name="NAME" x="453.39" y="215.9" size="1.778" layer="95" align="center-left"/>
@@ -9971,14 +9974,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="NAME" x="200.279" y="181.864" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="205.359" y="181.864" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="VSS1" gate="G$1" x="429.26" y="88.9" smashed="yes">
-<attribute name="VALUE" x="426.72" y="83.82" size="1.778" layer="96" rot="R90"/>
+<instance part="VSS1" gate="G$1" x="406.4" y="86.36" smashed="yes" grouprefs="FILTRO">
+<attribute name="VALUE" x="403.86" y="81.28" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="VSS2" gate="G$1" x="358.14" y="88.9" smashed="yes">
-<attribute name="VALUE" x="355.6" y="83.82" size="1.778" layer="96" rot="R90"/>
+<instance part="VSS2" gate="G$1" x="335.28" y="86.36" smashed="yes" grouprefs="FILTRO">
+<attribute name="VALUE" x="332.74" y="81.28" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="VSS3" gate="G$1" x="287.02" y="88.9" smashed="yes">
-<attribute name="VALUE" x="284.48" y="83.82" size="1.778" layer="96" rot="R90"/>
+<instance part="VSS3" gate="G$1" x="264.16" y="86.36" smashed="yes" grouprefs="FILTRO">
+<attribute name="VALUE" x="261.62" y="81.28" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="VSS4" gate="G$1" x="414.02" y="152.4" smashed="yes">
 <attribute name="VALUE" x="411.48" y="147.32" size="1.778" layer="96" rot="R90"/>
@@ -9993,6 +9996,27 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="IC1" gate="G$1" x="127" y="172.72" smashed="yes">
 <attribute name="NAME" x="156.21" y="180.34" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="156.21" y="177.8" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="IC10" gate="G$1" x="469.9" y="104.14" smashed="yes" grouprefs="FILTRO">
+<attribute name="NAME" x="494.03" y="111.76" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="494.03" y="109.22" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="R12" gate="G$1" x="474.98" y="119.38" smashed="yes" grouprefs="FILTRO">
+<attribute name="NAME" x="471.17" y="120.8786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="471.17" y="116.078" size="1.778" layer="96"/>
+</instance>
+<instance part="R13" gate="G$1" x="469.9" y="83.82" smashed="yes" rot="R270" grouprefs="FILTRO">
+<attribute name="NAME" x="471.3986" y="87.63" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="466.598" y="87.63" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND17" gate="1" x="469.9" y="73.66" smashed="yes" grouprefs="FILTRO">
+<attribute name="VALUE" x="467.36" y="71.12" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V12" gate="G$1" x="505.46" y="101.6" smashed="yes" rot="R270" grouprefs="FILTRO">
+<attribute name="VALUE" x="502.92" y="96.52" size="1.778" layer="96"/>
+</instance>
+<instance part="GND18" gate="1" x="462.28" y="81.28" smashed="yes" grouprefs="FILTRO">
+<attribute name="VALUE" x="459.74" y="78.74" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -10036,8 +10060,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="JP1" gate="A" pin="4"/>
-<wire x1="233.68" y1="109.22" x2="233.68" y2="111.76" width="0.1524" layer="91" grouprefs="IMAGEN"/>
-<wire x1="233.68" y1="111.76" x2="241.3" y2="111.76" width="0.1524" layer="91" grouprefs="IMAGEN"/>
+<wire x1="177.8" y1="71.12" x2="177.8" y2="73.66" width="0.1524" layer="91" grouprefs="IMAGEN"/>
+<wire x1="177.8" y1="73.66" x2="185.42" y2="73.66" width="0.1524" layer="91" grouprefs="IMAGEN"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="MP3"/>
@@ -10112,20 +10136,20 @@ In this library the device names are the same as the pin names of the symbols, t
 </segment>
 <segment>
 <pinref part="IC8" gate="G$1" pin="GND"/>
-<wire x1="439.42" y1="101.6" x2="434.34" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="434.34" y1="101.6" x2="434.34" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="416.56" y1="99.06" x2="411.48" y2="99.06" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="411.48" y1="99.06" x2="411.48" y2="81.28" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="IC7" gate="G$1" pin="GND"/>
-<wire x1="370.84" y1="101.6" x2="365.76" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="101.6" x2="365.76" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="99.06" x2="342.9" y2="99.06" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="342.9" y1="99.06" x2="342.9" y2="81.28" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="IC6" gate="G$1" pin="GND"/>
-<wire x1="299.72" y1="104.14" x2="289.56" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="104.14" x2="289.56" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="101.6" x2="266.7" y2="101.6" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="266.7" y1="101.6" x2="266.7" y2="81.28" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -10176,6 +10200,19 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="162.56" y1="137.16" x2="162.56" y2="134.62" width="0.1524" layer="91"/>
 <junction x="162.56" y="134.62"/>
 </segment>
+<segment>
+<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="469.9" y1="78.74" x2="469.9" y2="76.2" width="0.1524" layer="91" grouprefs="FILTRO"/>
+</segment>
+<segment>
+<pinref part="IC10" gate="G$1" pin="GND"/>
+<wire x1="469.9" y1="101.6" x2="467.36" y2="101.6" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="467.36" y1="101.6" x2="467.36" y2="93.98" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="467.36" y1="93.98" x2="462.28" y2="93.98" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+<wire x1="462.28" y1="93.98" x2="462.28" y2="83.82" width="0.1524" layer="91" grouprefs="FILTRO"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -10216,8 +10253,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
 <pinref part="JP1" gate="A" pin="3"/>
-<wire x1="220.98" y1="116.84" x2="220.98" y2="114.3" width="0.1524" layer="91" grouprefs="IMAGEN"/>
-<wire x1="220.98" y1="114.3" x2="241.3" y2="114.3" width="0.1524" layer="91" grouprefs="IMAGEN"/>
+<wire x1="165.1" y1="78.74" x2="165.1" y2="76.2" width="0.1524" layer="91" grouprefs="IMAGEN"/>
+<wire x1="165.1" y1="76.2" x2="185.42" y2="76.2" width="0.1524" layer="91" grouprefs="IMAGEN"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="OUT"/>
@@ -10234,22 +10271,27 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="IC6" gate="G$1" pin="VCC+"/>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
-<wire x1="327.66" y1="104.14" x2="340.36" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="101.6" x2="317.5" y2="101.6" width="0.1524" layer="91" grouprefs="FILTRO"/>
 </segment>
 <segment>
 <pinref part="IC7" gate="G$1" pin="VCC+"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
-<wire x1="398.78" y1="101.6" x2="411.48" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="99.06" x2="388.62" y2="99.06" width="0.1524" layer="91" grouprefs="FILTRO"/>
 </segment>
 <segment>
 <pinref part="IC8" gate="G$1" pin="VCC+"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
-<wire x1="467.36" y1="101.6" x2="482.6" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="444.5" y1="99.06" x2="459.74" y2="99.06" width="0.1524" layer="91" grouprefs="FILTRO"/>
 </segment>
 <segment>
 <pinref part="IC9" gate="G$1" pin="+VS"/>
 <wire x1="457.2" y1="205.74" x2="472.44" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="+3V11" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="IC10" gate="G$1" pin="VCC+"/>
+<pinref part="+3V12" gate="G$1" pin="+3V3"/>
+<wire x1="497.84" y1="101.6" x2="502.92" y2="101.6" width="0.1524" layer="91" grouprefs="FILTRO"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -10323,13 +10365,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <net name="N$21" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
-<wire x1="241.3" y1="116.84" x2="228.6" y2="116.84" width="0.1524" layer="91" grouprefs="IMAGEN"/>
+<wire x1="185.42" y1="78.74" x2="172.72" y2="78.74" width="0.1524" layer="91" grouprefs="IMAGEN"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
-<wire x1="241.3" y1="119.38" x2="228.6" y2="119.38" width="0.1524" layer="91" grouprefs="IMAGEN"/>
+<wire x1="185.42" y1="81.28" x2="172.72" y2="81.28" width="0.1524" layer="91" grouprefs="IMAGEN"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -10417,17 +10459,17 @@ In this library the device names are the same as the pin names of the symbols, t
 </segment>
 <segment>
 <pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="429.26" y1="93.98" x2="429.26" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="406.4" y1="91.44" x2="406.4" y2="88.9" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="VSS1" gate="G$1" pin="VSS"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="358.14" y1="93.98" x2="358.14" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="91.44" x2="335.28" y2="88.9" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="VSS2" gate="G$1" pin="VSS"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="287.02" y1="93.98" x2="287.02" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="91.44" x2="264.16" y2="88.9" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="VSS3" gate="G$1" pin="VSS"/>
 </segment>
 <segment>
@@ -10446,120 +10488,123 @@ In this library the device names are the same as the pin names of the symbols, t
 <net name="N$30" class="0">
 <segment>
 <pinref part="IC6" gate="G$1" pin="1IN-"/>
-<wire x1="299.72" y1="101.6" x2="292.1" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="101.6" x2="292.1" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="93.98" x2="335.28" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="335.28" y1="93.98" x2="335.28" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="99.06" x2="269.24" y2="99.06" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="269.24" y1="99.06" x2="269.24" y2="91.44" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="269.24" y1="91.44" x2="312.42" y2="91.44" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="312.42" y1="91.44" x2="312.42" y2="104.14" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="IC6" gate="G$1" pin="OUT"/>
-<wire x1="335.28" y1="106.68" x2="327.66" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="104.14" x2="304.8" y2="104.14" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="314.96" y1="121.92" x2="335.28" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="335.28" y1="121.92" x2="335.28" y2="106.68" width="0.1524" layer="91"/>
-<junction x="335.28" y="106.68"/>
+<wire x1="292.1" y1="119.38" x2="312.42" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="312.42" y1="119.38" x2="312.42" y2="104.14" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<junction x="312.42" y="104.14" grouprefs="FILTRO"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="342.9" y1="121.92" x2="335.28" y2="121.92" width="0.1524" layer="91"/>
-<junction x="335.28" y="121.92"/>
+<wire x1="320.04" y1="119.38" x2="312.42" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<junction x="312.42" y="119.38" grouprefs="FILTRO"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="281.94" y1="121.92" x2="287.02" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="119.38" x2="264.16" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="287.02" y1="121.92" x2="307.34" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="119.38" x2="287.02" y2="121.92" width="0.1524" layer="91"/>
-<junction x="287.02" y="121.92"/>
+<wire x1="264.16" y1="119.38" x2="284.48" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="264.16" y1="116.84" x2="264.16" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<junction x="264.16" y="119.38" grouprefs="FILTRO"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="287.02" y1="109.22" x2="287.02" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="106.68" x2="264.16" y2="104.14" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="IC6" gate="G$1" pin="1IN+"/>
-<wire x1="287.02" y1="106.68" x2="287.02" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="106.68" x2="287.02" y2="106.68" width="0.1524" layer="91"/>
-<junction x="287.02" y="106.68"/>
+<wire x1="264.16" y1="104.14" x2="264.16" y2="99.06" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="276.86" y1="104.14" x2="264.16" y2="104.14" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<junction x="264.16" y="104.14" grouprefs="FILTRO"/>
 </segment>
 </net>
 <net name="N$34" class="0">
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="358.14" y1="101.6" x2="358.14" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="99.06" x2="335.28" y2="101.6" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="IC7" gate="G$1" pin="1IN+"/>
-<wire x1="358.14" y1="104.14" x2="358.14" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="370.84" y1="104.14" x2="358.14" y2="104.14" width="0.1524" layer="91"/>
-<junction x="358.14" y="104.14"/>
+<wire x1="335.28" y1="101.6" x2="335.28" y2="104.14" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="347.98" y1="101.6" x2="335.28" y2="101.6" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<junction x="335.28" y="101.6" grouprefs="FILTRO"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="353.06" y1="121.92" x2="358.14" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="119.38" x2="335.28" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="358.14" y1="121.92" x2="375.92" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="116.84" x2="358.14" y2="121.92" width="0.1524" layer="91"/>
-<junction x="358.14" y="121.92"/>
+<wire x1="335.28" y1="119.38" x2="353.06" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="335.28" y1="114.3" x2="335.28" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<junction x="335.28" y="119.38" grouprefs="FILTRO"/>
 </segment>
 </net>
 <net name="N$36" class="0">
 <segment>
 <pinref part="IC7" gate="G$1" pin="1IN-"/>
-<wire x1="370.84" y1="99.06" x2="368.3" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="368.3" y1="99.06" x2="368.3" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="368.3" y1="91.44" x2="406.4" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="406.4" y1="91.44" x2="406.4" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="96.52" x2="345.44" y2="96.52" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="345.44" y1="96.52" x2="345.44" y2="88.9" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="345.44" y1="88.9" x2="383.54" y2="88.9" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="383.54" y1="88.9" x2="383.54" y2="101.6" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="IC7" gate="G$1" pin="OUT"/>
-<wire x1="406.4" y1="104.14" x2="398.78" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="101.6" x2="375.92" y2="101.6" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="406.4" y1="104.14" x2="406.4" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="406.4" y1="121.92" x2="383.54" y2="121.92" width="0.1524" layer="91"/>
-<junction x="406.4" y="104.14"/>
+<wire x1="383.54" y1="101.6" x2="383.54" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="383.54" y1="119.38" x2="360.68" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<junction x="383.54" y="101.6" grouprefs="FILTRO"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="414.02" y1="121.92" x2="406.4" y2="121.92" width="0.1524" layer="91"/>
-<junction x="406.4" y="121.92"/>
+<wire x1="391.16" y1="119.38" x2="383.54" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<junction x="383.54" y="119.38" grouprefs="FILTRO"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="424.18" y1="121.92" x2="429.26" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="119.38" x2="406.4" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="429.26" y1="121.92" x2="444.5" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="429.26" y1="116.84" x2="429.26" y2="121.92" width="0.1524" layer="91"/>
-<junction x="429.26" y="121.92"/>
+<wire x1="406.4" y1="119.38" x2="421.64" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="406.4" y1="114.3" x2="406.4" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<junction x="406.4" y="119.38" grouprefs="FILTRO"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="429.26" y1="106.68" x2="429.26" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="406.4" y1="104.14" x2="406.4" y2="101.6" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="IC8" gate="G$1" pin="1IN+"/>
-<wire x1="429.26" y1="104.14" x2="429.26" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="439.42" y1="104.14" x2="429.26" y2="104.14" width="0.1524" layer="91"/>
-<junction x="429.26" y="104.14"/>
+<wire x1="406.4" y1="101.6" x2="406.4" y2="99.06" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="416.56" y1="101.6" x2="406.4" y2="101.6" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<junction x="406.4" y="101.6" grouprefs="FILTRO"/>
 </segment>
 </net>
 <net name="N$38" class="0">
 <segment>
 <pinref part="IC8" gate="G$1" pin="1IN-"/>
-<wire x1="439.42" y1="99.06" x2="436.88" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="436.88" y1="99.06" x2="436.88" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="436.88" y1="91.44" x2="480.06" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="480.06" y1="91.44" x2="480.06" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="416.56" y1="96.52" x2="414.02" y2="96.52" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="414.02" y1="96.52" x2="414.02" y2="88.9" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="414.02" y1="88.9" x2="457.2" y2="88.9" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="457.2" y1="88.9" x2="457.2" y2="101.6" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="IC8" gate="G$1" pin="OUT"/>
-<wire x1="480.06" y1="104.14" x2="467.36" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="457.2" y1="101.6" x2="444.5" y2="101.6" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="452.12" y1="121.92" x2="480.06" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="480.06" y1="121.92" x2="480.06" y2="104.14" width="0.1524" layer="91"/>
-<junction x="480.06" y="104.14"/>
-<wire x1="480.06" y1="121.92" x2="485.14" y2="121.92" width="0.1524" layer="91"/>
-<junction x="480.06" y="121.92"/>
+<wire x1="429.26" y1="119.38" x2="457.2" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="457.2" y1="119.38" x2="457.2" y2="101.6" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<junction x="457.2" y="101.6" grouprefs="FILTRO"/>
+<wire x1="457.2" y1="119.38" x2="462.28" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<junction x="457.2" y="119.38" grouprefs="FILTRO"/>
+<pinref part="IC10" gate="G$1" pin="1IN+"/>
+<wire x1="469.9" y1="104.14" x2="462.28" y2="104.14" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="462.28" y1="104.14" x2="462.28" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
 </segment>
 </net>
 <net name="N$40" class="0">
@@ -10588,8 +10633,8 @@ In this library the device names are the same as the pin names of the symbols, t
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="271.78" y1="121.92" x2="259.08" y2="121.92" width="0.1524" layer="91"/>
-<label x="259.08" y="121.92" size="1.778" layer="95"/>
+<wire x1="248.92" y1="119.38" x2="236.22" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<label x="236.22" y="119.38" size="1.778" layer="95" grouprefs="FILTRO"/>
 </segment>
 </net>
 <net name="INA-" class="0">
@@ -10630,12 +10675,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="266.7" y="195.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="264.16" y1="193.04" x2="274.32" y2="193.04" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
@@ -10667,6 +10706,29 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="IC1" gate="G$1" pin="IO2"/>
 <wire x1="160.02" y1="142.24" x2="180.34" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="469.9" y1="119.38" x2="464.82" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="464.82" y1="119.38" x2="464.82" y2="99.06" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<pinref part="IC10" gate="G$1" pin="1IN-"/>
+<wire x1="464.82" y1="99.06" x2="469.9" y2="99.06" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<junction x="469.9" y="99.06" grouprefs="FILTRO"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="469.9" y1="88.9" x2="469.9" y2="99.06" width="0.1524" layer="91" grouprefs="FILTRO"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="480.06" y1="119.38" x2="500.38" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="500.38" y1="119.38" x2="500.38" y2="104.14" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<pinref part="IC10" gate="G$1" pin="OUT"/>
+<wire x1="500.38" y1="104.14" x2="497.84" y2="104.14" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="500.38" y1="104.14" x2="515.62" y2="104.14" width="0.1524" layer="91"/>
+<junction x="500.38" y="104.14"/>
 </segment>
 </net>
 </nets>
