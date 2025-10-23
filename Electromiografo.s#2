@@ -10315,7 +10315,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="SDA" class="0">
 <segment>
-<label x="165.1" y="154.94" size="1.778" layer="95"/>
+<label x="167.64" y="154.94" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="IO40"/>
 <wire x1="160.02" y1="154.94" x2="180.34" y2="154.94" width="0.1524" layer="91"/>
 </segment>

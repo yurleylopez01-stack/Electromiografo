@@ -245,26 +245,6 @@
 <wire x1="-0.2" y1="-1.45" x2="-0.2" y2="1.45" width="0.2" layer="21"/>
 <wire x1="-1.95" y1="1.5" x2="-0.55" y2="1.5" width="0.2" layer="21"/>
 </package>
-<package name="SHDR2W50P0X200_1X2_590X450X600">
-<description>&lt;b&gt;B2B-PH-K-S(LF)(SN)&lt;/b&gt;&lt;br&gt;
-</description>
-<pad name="1" x="0" y="0" drill="0.7" diameter="1.1" shape="square"/>
-<pad name="2" x="-2" y="0" drill="0.7" diameter="1.1"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="2.2" y1="-1.95" x2="-4.2" y2="-1.95" width="0.05" layer="51"/>
-<wire x1="-4.2" y1="-1.95" x2="-4.2" y2="3.05" width="0.05" layer="51"/>
-<wire x1="-4.2" y1="3.05" x2="2.2" y2="3.05" width="0.05" layer="51"/>
-<wire x1="2.2" y1="3.05" x2="2.2" y2="-1.95" width="0.05" layer="51"/>
-<wire x1="1.95" y1="-1.7" x2="-3.95" y2="-1.7" width="0.1" layer="51"/>
-<wire x1="-3.95" y1="-1.7" x2="-3.95" y2="2.8" width="0.1" layer="51"/>
-<wire x1="-3.95" y1="2.8" x2="1.95" y2="2.8" width="0.1" layer="51"/>
-<wire x1="1.95" y1="2.8" x2="1.95" y2="-1.7" width="0.1" layer="51"/>
-<wire x1="0" y1="-1.7" x2="-3.95" y2="-1.7" width="0.2" layer="21"/>
-<wire x1="-3.95" y1="-1.7" x2="-3.95" y2="2.8" width="0.2" layer="21"/>
-<wire x1="-3.95" y1="2.8" x2="1.95" y2="2.8" width="0.2" layer="21"/>
-<wire x1="1.95" y1="2.8" x2="1.95" y2="0" width="0.2" layer="21"/>
-</package>
 <package name="SOT150P700X180-5N">
 <description>&lt;b&gt;NDC0005A&lt;/b&gt;&lt;br&gt;
 </description>
@@ -469,6 +449,33 @@
 <wire x1="-9" y1="12.75" x2="9" y2="12.75" width="0.2" layer="21"/>
 <wire x1="9" y1="12.75" x2="9" y2="6" width="0.2" layer="21"/>
 </package>
+<package name="1769">
+<description>&lt;b&gt;1769&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1" y="0" dx="3.5" dy="1" layer="1" rot="R90"/>
+<smd name="2" x="1" y="0" dx="3.5" dy="1" layer="1" rot="R90"/>
+<smd name="3" x="-3.35" y="-5.55" dx="3.4" dy="1.5" layer="1" rot="R90"/>
+<smd name="4" x="3.35" y="-5.55" dx="3.4" dy="1.5" layer="1" rot="R90"/>
+<text x="0" y="-2.321" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-2.321" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-3.95" y1="0" x2="3.95" y2="0" width="0.2" layer="51"/>
+<wire x1="3.95" y1="0" x2="3.95" y2="-6.849" width="0.2" layer="51"/>
+<wire x1="3.95" y1="-6.849" x2="-3.95" y2="-6.849" width="0.2" layer="51"/>
+<wire x1="-3.95" y1="-6.849" x2="-3.95" y2="0" width="0.2" layer="51"/>
+<wire x1="-5.1" y1="3.608" x2="5.1" y2="3.608" width="0.1" layer="51"/>
+<wire x1="5.1" y1="3.608" x2="5.1" y2="-8.25" width="0.1" layer="51"/>
+<wire x1="5.1" y1="-8.25" x2="-5.1" y2="-8.25" width="0.1" layer="51"/>
+<wire x1="-5.1" y1="-8.25" x2="-5.1" y2="3.608" width="0.1" layer="51"/>
+<wire x1="-3.95" y1="0" x2="-3.95" y2="-3.425" width="0.2" layer="21"/>
+<wire x1="3.95" y1="0" x2="3.95" y2="-3.425" width="0.2" layer="21"/>
+<wire x1="-3.95" y1="0" x2="-1.9" y2="0" width="0.2" layer="21"/>
+<wire x1="3.95" y1="0" x2="1.9" y2="0" width="0.2" layer="21"/>
+<wire x1="-2.196" y1="-6.849" x2="2.196" y2="-6.849" width="0.2" layer="21"/>
+<wire x1="-1.095" y1="2.582" x2="-1.095" y2="2.582" width="0.052" layer="21"/>
+<wire x1="-1.095" y1="2.582" x2="-1.043" y2="2.582" width="0.052" layer="21" curve="180"/>
+<wire x1="-1.043" y1="2.582" x2="-1.043" y2="2.582" width="0.052" layer="21"/>
+<wire x1="-1.043" y1="2.582" x2="-1.095" y2="2.582" width="0.052" layer="21" curve="180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PTS125SM73SMTR21M_LFS">
@@ -514,16 +521,6 @@
 <pin name="VBAT" x="0" y="-5.08" length="middle"/>
 <pin name="VDD" x="27.94" y="0" length="middle" rot="R180"/>
 <pin name="PROG" x="27.94" y="-2.54" length="middle" rot="R180"/>
-</symbol>
-<symbol name="B2B-PH-K-S_LF__SN_">
-<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-5.08" x2="15.24" y2="2.54" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="1" x="0" y="0" length="middle"/>
-<pin name="2" x="0" y="-2.54" length="middle"/>
 </symbol>
 <symbol name="LP38692MP-3.3_NOPB">
 <wire x1="5.08" y1="2.54" x2="25.4" y2="2.54" width="0.254" layer="94"/>
@@ -648,6 +645,18 @@
 <pin name="GND_10" x="33.02" y="-55.88" length="middle" rot="R180"/>
 <pin name="GND_11" x="33.02" y="-58.42" length="middle" rot="R180"/>
 </symbol>
+<symbol name="1769">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="2" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="3" x="0" y="0" length="middle"/>
+<pin name="4" x="0" y="-2.54" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PTS125SM73SMTR21M_LFS" prefix="S">
@@ -734,31 +743,6 @@ Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pd
 <attribute name="MANUFACTURER_PART_NUMBER" value="MCP73831T-2DCI/OT" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="579-MCP73831T-2DCIOT" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP73831T-2DCI-OT?qs=yUQqVecv4qu38ml9qkvsJw%3D%3D" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="B2B-PH-K-S_LF__SN_" prefix="J">
-<description>&lt;b&gt;Conn Shrouded Header HDR 2 POS 2mm Solder ST Thru-Hole Box&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://datasheet.lcsc.com/szlcsc/JST-Sales-America-B2B-PH-K-S-LF-SN_C131337.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="B2B-PH-K-S_LF__SN_" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SHDR2W50P0X200_1X2_590X450X600">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value="Conn Shrouded Header HDR 2 POS 2mm Solder ST Thru-Hole Box" constant="no"/>
-<attribute name="HEIGHT" value="6mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="JST (JAPAN SOLDERLESS TERMINALS)" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="B2B-PH-K-S(LF)(SN)" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="306-B2BPHKSLFSNPP" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/JST-Commercial/B2B-PH-K-SLFSN?qs=cdbOS8ANM9AlozzPlOt72g%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -972,6 +956,33 @@ Source: &lt;a href="https://www.espressif.com/sites/default/files/documentation/
 <attribute name="MANUFACTURER_PART_NUMBER" value="ESP32-S3-WROOM-1-N16R8" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="356-ESP32S3WRM1N16R8" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Espressif-Systems/ESP32-S3-WROOM-1-N16R8?qs=Li%252BoUPsLEnvQc9gW6AMhZg%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1769" prefix="J">
+<description>&lt;b&gt;Adafruit Accessories JST-PH 2-pin SMT Right Angle Connect&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://cdn-shop.adafruit.com/datasheets/17311.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="1769" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1769">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Adafruit Accessories JST-PH 2-pin SMT Right Angle Connect" constant="no"/>
+<attribute name="HEIGHT" value="5.5mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Adafruit" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1769" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="485-1769" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Adafruit/1769?qs=GURawfaeGuBbgoGtf2XstA%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9641,7 +9652,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
 <part name="LED1" library="PulseOximeterECG_AU" library_urn="urn:adsk.eagle:library:14846661" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:14846712/2"/>
-<part name="J2" library="SamacSys_Parts" deviceset="B2B-PH-K-S_LF__SN_" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="IC3" library="74xx-little-us" library_urn="urn:adsk.eagle:library:87" deviceset="74*1G3157" device="DBVR" package3d_urn="urn:adsk.eagle:package:2414/3"/>
@@ -9693,6 +9703,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="GND17" library="PulseOximeterECG_AU" library_urn="urn:adsk.eagle:library:14846661" deviceset="GND" device=""/>
 <part name="+3V12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND18" library="PulseOximeterECG_AU" library_urn="urn:adsk.eagle:library:14846661" deviceset="GND" device=""/>
+<part name="J2" library="SamacSys_Parts" deviceset="1769" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9834,10 +9845,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="LED1" gate="G$1" x="297.18" y="200.66" smashed="yes">
 <attribute name="NAME" x="300.736" y="196.088" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="302.895" y="196.088" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="J2" gate="G$1" x="350.52" y="198.12" smashed="yes">
-<attribute name="NAME" x="356.87" y="205.74" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="356.87" y="203.2" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="GND10" gate="1" x="325.12" y="175.26" smashed="yes">
 <attribute name="VALUE" x="322.58" y="172.72" size="1.778" layer="96"/>
@@ -10018,6 +10025,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="GND18" gate="1" x="462.28" y="81.28" smashed="yes" grouprefs="FILTRO">
 <attribute name="VALUE" x="459.74" y="78.74" size="1.778" layer="96"/>
 </instance>
+<instance part="J2" gate="G$1" x="347.98" y="200.66" smashed="yes">
+<attribute name="NAME" x="364.49" y="208.28" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="364.49" y="205.74" size="1.778" layer="96" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10115,12 +10126,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="325.12" y1="185.42" x2="325.12" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="337.82" y1="185.42" x2="345.44" y2="185.42" width="0.1524" layer="91"/>
 <junction x="337.82" y="185.42"/>
-<pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="345.44" y1="185.42" x2="345.44" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="345.44" y1="195.58" x2="350.52" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="345.44" y1="185.42" x2="345.44" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="325.12" y1="177.8" x2="325.12" y2="185.42" width="0.1524" layer="91"/>
 <junction x="325.12" y="185.42"/>
+<pinref part="J2" gate="G$1" pin="4"/>
+<wire x1="347.98" y1="198.12" x2="345.44" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
@@ -10445,10 +10456,13 @@ In this library the device names are the same as the pin names of the symbols, t
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
-<pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="337.82" y1="195.58" x2="337.82" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="198.12" x2="350.52" y2="198.12" width="0.1524" layer="91"/>
-<label x="340.36" y="198.12" size="1.778" layer="95"/>
+<label x="340.36" y="200.66" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$1" pin="3"/>
+<wire x1="347.98" y1="200.66" x2="337.82" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="200.66" x2="337.82" y2="195.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<label x="556.26" y="-127" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="VSS" class="0">
