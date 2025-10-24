@@ -1440,7 +1440,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="-0.275" y1="-1.45" x2="-0.275" y2="1.45" width="0.2" layer="21"/>
 <wire x1="-1.875" y1="1.5" x2="-0.625" y2="1.5" width="0.2" layer="21"/>
 </package>
-<package name="SOP65P490X110-8N">
+<package name="SOP65P490X110-8N@1">
 <description>&lt;b&gt;RM-8&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="1" x="-2.225" y="0.975" dx="1.45" dy="0.45" layer="1"/>
@@ -1571,35 +1571,27 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="3.9" y1="-3.05" x2="10.1" y2="-3.05" width="0.1" layer="21"/>
 <wire x1="14.5" y1="3" x2="14.5" y2="-1.5" width="0.1" layer="21"/>
 </package>
-<package name="PTS125SM73SMTR21MLFS">
-<description>&lt;b&gt;PTS125SM73SMTR21M LFS-1&lt;/b&gt;&lt;br&gt;
+<package name="B3U1000PM">
+<description>&lt;b&gt;B3U-1000PM-3&lt;/b&gt;&lt;br&gt;
 </description>
-<smd name="A1" x="-7.15" y="2.5" dx="2" dy="1.5" layer="1"/>
-<smd name="B1" x="7.15" y="2.5" dx="2" dy="1.5" layer="1"/>
-<smd name="C1" x="-7.15" y="-2.5" dx="2" dy="1.5" layer="1"/>
-<smd name="D1" x="7.15" y="-2.5" dx="2" dy="1.5" layer="1"/>
+<smd name="1" x="1.7" y="0" dx="1.7" dy="0.8" layer="1" rot="R90"/>
+<smd name="2" x="-1.7" y="0" dx="1.7" dy="0.8" layer="1" rot="R90"/>
 <text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-6" y1="6" x2="6" y2="6" width="0.1" layer="51"/>
-<wire x1="6" y1="6" x2="6" y2="-6" width="0.1" layer="51"/>
-<wire x1="6" y1="-6" x2="-6" y2="-6" width="0.1" layer="51"/>
-<wire x1="-6" y1="-6" x2="-6" y2="6" width="0.1" layer="51"/>
-<wire x1="-9.15" y1="7" x2="9.15" y2="7" width="0.1" layer="51"/>
-<wire x1="9.15" y1="7" x2="9.15" y2="-7" width="0.1" layer="51"/>
-<wire x1="9.15" y1="-7" x2="-9.15" y2="-7" width="0.1" layer="51"/>
-<wire x1="-9.15" y1="-7" x2="-9.15" y2="7" width="0.1" layer="51"/>
-<wire x1="-6" y1="4" x2="-6" y2="6" width="0.2" layer="21"/>
-<wire x1="-6" y1="6" x2="6" y2="6" width="0.2" layer="21"/>
-<wire x1="6" y1="6" x2="6" y2="4" width="0.2" layer="21"/>
-<wire x1="-6" y1="-4" x2="-6" y2="-6" width="0.2" layer="21"/>
-<wire x1="-6" y1="-6" x2="6" y2="-6" width="0.2" layer="21"/>
-<wire x1="6" y1="-6" x2="6" y2="-4" width="0.2" layer="21"/>
-<wire x1="-6" y1="-1" x2="-6" y2="1" width="0.2" layer="21"/>
-<wire x1="6" y1="-1" x2="6" y2="1" width="0.2" layer="21"/>
-<wire x1="-8.7" y1="2.5" x2="-8.7" y2="2.5" width="0.1" layer="21"/>
-<wire x1="-8.7" y1="2.5" x2="-8.6" y2="2.5" width="0.1" layer="21" curve="180"/>
-<wire x1="-8.6" y1="2.5" x2="-8.6" y2="2.5" width="0.1" layer="21"/>
-<wire x1="-8.6" y1="2.5" x2="-8.7" y2="2.5" width="0.1" layer="21" curve="180"/>
+<wire x1="-1.5" y1="1.25" x2="1.5" y2="1.25" width="0.1" layer="51"/>
+<wire x1="1.5" y1="1.25" x2="1.5" y2="-1.25" width="0.1" layer="51"/>
+<wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="-1.25" x2="-1.5" y2="1.25" width="0.1" layer="51"/>
+<wire x1="-3.1" y1="2.25" x2="3.1" y2="2.25" width="0.1" layer="51"/>
+<wire x1="3.1" y1="2.25" x2="3.1" y2="-2.25" width="0.1" layer="51"/>
+<wire x1="3.1" y1="-2.25" x2="-3.1" y2="-2.25" width="0.1" layer="51"/>
+<wire x1="-3.1" y1="-2.25" x2="-3.1" y2="2.25" width="0.1" layer="51"/>
+<wire x1="2.5" y1="0" x2="2.5" y2="0" width="0.1" layer="21"/>
+<wire x1="2.5" y1="0" x2="2.6" y2="0" width="0.1" layer="21" curve="180"/>
+<wire x1="2.6" y1="0" x2="2.6" y2="0" width="0.1" layer="21"/>
+<wire x1="2.6" y1="0" x2="2.5" y2="0" width="0.1" layer="21" curve="180"/>
+<wire x1="-1.5" y1="1.25" x2="1.5" y2="1.25" width="0.2" layer="21"/>
+<wire x1="-1.5" y1="-1.25" x2="1.5" y2="-1.25" width="0.2" layer="21"/>
 </package>
 </packages>
 </library>
@@ -2078,7 +2070,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="39.37" y="31.75" size="1.27" layer="25" rot="R90" align="center"/>
 <attribute name="VALUE" x="34.29" y="31.75" size="1.27" layer="27" rot="R90" align="center"/>
 </element>
-<element name="IC9" library="SamacSys_Parts" package="SOP65P490X110-8N" value="AD8223ARMZ" x="26.67" y="19.05" smashed="yes">
+<element name="IC9" library="SamacSys_Parts" package="SOP65P490X110-8N@1" value="AD8223ARMZ" x="26.67" y="19.05" smashed="yes">
 <attribute name="DESCRIPTION" value="AD8223ARMZ, Instrumention Amplifier, 0.25mV Offset, 80dB CMRR, Rail-Rail Output, 5 to 18V, 8-Pin MSOP" x="76.2" y="-53.34" size="1.778" layer="27" display="off"/>
 <attribute name="HEIGHT" value="1.1mm" x="76.2" y="-53.34" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Analog Devices" x="76.2" y="-53.34" size="1.778" layer="27" display="off"/>
@@ -2205,35 +2197,33 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="-13.97" y="99.06" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="48.895" y="34.29" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="S1" library="SamacSys_Parts" package="PTS125SM73SMTR21MLFS" value="PTS125SM73SMTR21M_LFS" x="58.42" y="64.77" smashed="yes" rot="R90">
-<attribute name="DESCRIPTION" value="Tactile Switch SPST-NO Top Actuated Surface Mount" x="66.04" y="115.57" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="7.3mm" x="66.04" y="115.57" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="C &amp; K COMPONENTS" x="66.04" y="115.57" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="PTS125SM73SMTR21M LFS" x="66.04" y="115.57" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="611-PTS125M73SMTRLFS" x="66.04" y="115.57" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/CK/PTS125SM73SMTR21M-LFS?qs=t7xnP681wgVp4NpaUUvA%252Bw%3D%3D" x="66.04" y="115.57" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="66.04" y="64.77" size="1.27" layer="25" rot="R90" align="center"/>
-<attribute name="VALUE" x="50.8" y="63.5" size="1.27" layer="27" rot="R90" align="center"/>
+<element name="S1" library="SamacSys_Parts" package="B3U1000PM" value="B3U-1000PM" x="5.08" y="-5.08" smashed="yes">
+<attribute name="DESCRIPTION" value="SWITCH TACTILE SPST-NO 0.05A 12V, Tactile Switch SPST-NO Top Actuated Surface Mount" x="5.08" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="1.75mm" x="5.08" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="OMRON Electronic Components LLC" x="5.08" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="B3U-1000PM" x="5.08" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="653-B3U-1000PM" x="5.08" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3U-1000PM?qs=hnUcNC2tU0oiJUWqjOlHqA%3D%3D" x="5.08" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="5.08" y="-5.08" size="1.27" layer="25" align="center"/>
+<attribute name="VALUE" x="5.08" y="-5.08" size="1.27" layer="27" align="center"/>
 </element>
-<element name="S2" library="SamacSys_Parts" package="PTS125SM73SMTR21MLFS" value="PTS125SM73SMTR21M_LFS" x="39.37" y="67.31" smashed="yes">
-<attribute name="DESCRIPTION" value="Tactile Switch SPST-NO Top Actuated Surface Mount" x="64.77" y="30.48" size="1.778" layer="27" display="off"/>
-<attribute name="HEIGHT" value="7.3mm" x="64.77" y="30.48" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="C &amp; K COMPONENTS" x="64.77" y="30.48" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="PTS125SM73SMTR21M LFS" x="64.77" y="30.48" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="611-PTS125M73SMTRLFS" x="64.77" y="30.48" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/CK/PTS125SM73SMTR21M-LFS?qs=t7xnP681wgVp4NpaUUvA%252Bw%3D%3D" x="64.77" y="30.48" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="39.37" y="59.69" size="1.27" layer="25" align="center"/>
-<attribute name="VALUE" x="39.37" y="74.93" size="1.27" layer="27" align="center"/>
+<element name="S2" library="SamacSys_Parts" package="B3U1000PM" value="B3U-1000PM" x="3.81" y="-10.16" smashed="yes">
+<attribute name="DESCRIPTION" value="SWITCH TACTILE SPST-NO 0.05A 12V, Tactile Switch SPST-NO Top Actuated Surface Mount" x="3.81" y="-10.16" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="1.75mm" x="3.81" y="-10.16" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="OMRON Electronic Components LLC" x="3.81" y="-10.16" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="B3U-1000PM" x="3.81" y="-10.16" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="653-B3U-1000PM" x="3.81" y="-10.16" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3U-1000PM?qs=hnUcNC2tU0oiJUWqjOlHqA%3D%3D" x="3.81" y="-10.16" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="3.81" y="-10.16" size="1.27" layer="25" align="center"/>
+<attribute name="VALUE" x="3.81" y="-10.16" size="1.27" layer="27" align="center"/>
 </element>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="IC3" pad="2"/>
-<contactref element="S1" pad="D1"/>
 <contactref element="C11" pad="2"/>
 <contactref element="C1" pad="1"/>
 <contactref element="IC1" pad="1"/>
-<contactref element="S2" pad="B1"/>
 <contactref element="C2" pad="1"/>
 <contactref element="JP1" pad="4"/>
 <contactref element="J1" pad="8"/>
@@ -2266,55 +2256,57 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="40"/>
 <contactref element="R13" pad="2"/>
 <contactref element="IC10" pad="2"/>
-<wire x1="83.77" y1="63.73" x2="83.77" y2="62.33" width="0" layer="19" extent="1-1"/>
-<wire x1="85.17" y1="62.33" x2="83.77" y2="62.33" width="0" layer="19" extent="1-1"/>
-<wire x1="83.77" y1="65.13" x2="83.77" y2="63.73" width="0" layer="19" extent="1-1"/>
-<wire x1="85.17" y1="63.73" x2="83.77" y2="63.73" width="0" layer="19" extent="1-1"/>
-<wire x1="86.57" y1="63.73" x2="85.17" y2="63.73" width="0" layer="19" extent="1-1"/>
-<wire x1="86.57" y1="62.33" x2="85.17" y2="62.33" width="0" layer="19" extent="1-1"/>
-<wire x1="85.17" y1="65.13" x2="83.77" y2="65.13" width="0" layer="19" extent="1-1"/>
-<wire x1="86.57" y1="65.13" x2="86.57" y2="63.73" width="0" layer="19" extent="1-1"/>
-<wire x1="92.89" y1="70.98" x2="86.57" y2="65.13" width="0" layer="19" extent="1-1"/>
+<contactref element="S1" pad="1"/>
+<contactref element="S2" pad="2"/>
+<wire x1="86.57" y1="65.13" x2="92.89" y2="70.98" width="0" layer="19" extent="1-1"/>
+<wire x1="86.57" y1="63.73" x2="86.57" y2="65.13" width="0" layer="19" extent="1-1"/>
+<wire x1="86.57" y1="62.33" x2="86.57" y2="63.73" width="0" layer="19" extent="1-1"/>
+<wire x1="85.17" y1="65.13" x2="86.57" y2="65.13" width="0" layer="19" extent="1-1"/>
+<wire x1="85.17" y1="63.73" x2="86.57" y2="63.73" width="0" layer="19" extent="1-1"/>
+<wire x1="85.17" y1="62.33" x2="86.57" y2="62.33" width="0" layer="19" extent="1-1"/>
+<wire x1="83.77" y1="63.73" x2="85.17" y2="63.73" width="0" layer="19" extent="1-1"/>
+<wire x1="83.77" y1="65.13" x2="85.17" y2="65.13" width="0" layer="19" extent="1-1"/>
+<wire x1="83.77" y1="62.33" x2="85.17" y2="62.33" width="0" layer="19" extent="1-1"/>
 <wire x1="92.89" y1="53.48" x2="86.57" y2="62.33" width="0" layer="19" extent="1-1"/>
+<wire x1="72.39" y1="68.58" x2="83.77" y2="65.13" width="0" layer="19" extent="1-1"/>
 <wire x1="76.2" y1="32.7" x2="92.89" y2="53.48" width="0" layer="19" extent="1-1"/>
-<wire x1="41.91" y1="45.4" x2="76.2" y2="32.7" width="0" layer="19" extent="1-1"/>
-<wire x1="98.45" y1="3.72" x2="41.91" y2="45.4" width="0" layer="19" extent="1-1"/>
-<wire x1="96.55" y1="3.945" x2="98.45" y2="3.72" width="0" layer="19" extent="1-1"/>
+<wire x1="76.2" y1="21.27" x2="76.2" y2="32.7" width="0" layer="19" extent="1-1"/>
+<wire x1="85.11" y1="25.4" x2="76.2" y2="21.27" width="0" layer="19" extent="1-1"/>
+<wire x1="94" y1="15.24" x2="85.11" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="96.55" y1="3.945" x2="94" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="98.45" y1="3.72" x2="96.55" y2="3.945" width="0" layer="19" extent="1-1"/>
 <wire x1="99" y1="1.27" x2="98.45" y2="3.72" width="0" layer="19" extent="1-1"/>
 <wire x1="96.4" y1="1.27" x2="99" y2="1.27" width="0" layer="19" extent="1-1"/>
 <wire x1="94.1" y1="1.27" x2="96.4" y2="1.27" width="0" layer="19" extent="1-1"/>
 <wire x1="91.5" y1="1.27" x2="94.1" y2="1.27" width="0" layer="19" extent="1-1"/>
 <wire x1="92.05" y1="3.72" x2="91.5" y2="1.27" width="0" layer="19" extent="1-1"/>
-<wire x1="85.11" y1="25.4" x2="76.2" y2="32.7" width="0" layer="19" extent="1-1"/>
-<wire x1="36.83" y1="30.5" x2="85.11" y2="25.4" width="0" layer="19" extent="1-1"/>
 <wire x1="84.63" y1="3.34" x2="91.5" y2="1.27" width="0" layer="19" extent="1-1"/>
-<wire x1="46.52" y1="69.81" x2="84.63" y2="3.34" width="0" layer="19" extent="1-1"/>
-<wire x1="72.39" y1="68.58" x2="46.52" y2="69.81" width="0" layer="19" extent="1-1"/>
-<wire x1="38.08" y1="39.37" x2="85.11" y2="25.4" width="0" layer="19" extent="1-1"/>
-<wire x1="47.01" y1="8.89" x2="38.08" y2="39.37" width="0" layer="19" extent="1-1"/>
-<wire x1="76.2" y1="21.27" x2="47.01" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="24.445" y1="18.075" x2="47.01" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="52.07" y1="26.65" x2="24.445" y2="18.075" width="0" layer="19" extent="1-1"/>
-<wire x1="94" y1="15.24" x2="52.07" y2="26.65" width="0" layer="19" extent="1-1"/>
-<wire x1="31.33" y1="55.88" x2="76.2" y2="21.27" width="0" layer="19" extent="1-1"/>
+<wire x1="72.39" y1="1.25" x2="84.63" y2="3.34" width="0" layer="19" extent="1-1"/>
+<wire x1="66.55" y1="3.81" x2="72.39" y2="1.25" width="0" layer="19" extent="1-1"/>
+<wire x1="47.01" y1="8.89" x2="66.55" y2="3.81" width="0" layer="19" extent="1-1"/>
+<wire x1="52.07" y1="26.65" x2="47.01" y2="8.89" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="30.5" x2="52.07" y2="26.65" width="0" layer="19" extent="1-1"/>
+<wire x1="38.08" y1="39.37" x2="36.83" y2="30.5" width="0" layer="19" extent="1-1"/>
+<wire x1="41.91" y1="45.4" x2="38.08" y2="39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="31.33" y1="55.88" x2="41.91" y2="45.4" width="0" layer="19" extent="1-1"/>
 <wire x1="23.28" y1="67.31" x2="31.33" y2="55.88" width="0" layer="19" extent="1-1"/>
 <wire x1="23.28" y1="72.39" x2="23.28" y2="67.31" width="0" layer="19" extent="1-1"/>
-<wire x1="66.55" y1="3.81" x2="23.28" y2="72.39" width="0" layer="19" extent="1-1"/>
-<wire x1="72.39" y1="1.25" x2="66.55" y2="3.81" width="0" layer="19" extent="1-1"/>
-<wire x1="17.46" y1="59.69" x2="23.28" y2="72.39" width="0" layer="19" extent="1-1"/>
-<wire x1="60.92" y1="71.92" x2="72.39" y2="1.25" width="0" layer="19" extent="1-1"/>
+<wire x1="17.46" y1="59.69" x2="23.28" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="24.445" y1="18.075" x2="36.83" y2="30.5" width="0" layer="19" extent="1-1"/>
+<wire x1="6.78" y1="-5.08" x2="24.445" y2="18.075" width="0" layer="19" extent="1-1"/>
+<wire x1="2.11" y1="-10.16" x2="6.78" y2="-5.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="IC3" pad="5"/>
 </signal>
 <signal name="N$1">
 <contactref element="R1" pad="1"/>
-<contactref element="S1" pad="B1"/>
 <contactref element="C11" pad="1"/>
 <contactref element="IC1" pad="26"/>
-<wire x1="69.85" y1="62.55" x2="75.13" y2="55.245" width="0" layer="19" extent="1-1"/>
+<contactref element="S1" pad="2"/>
+<wire x1="75.13" y1="55.245" x2="69.85" y2="62.55" width="0" layer="19" extent="1-1"/>
 <wire x1="24.98" y1="72.39" x2="69.85" y2="62.55" width="0" layer="19" extent="1-1"/>
-<wire x1="55.92" y1="71.92" x2="24.98" y2="72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="3.38" y1="-5.08" x2="24.98" y2="72.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="R1" pad="2"/>
@@ -2348,12 +2340,12 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$2">
 <contactref element="R2" pad="1"/>
-<contactref element="S2" pad="D1"/>
 <contactref element="C2" pad="2"/>
 <contactref element="IC1" pad="3"/>
-<wire x1="46.52" y1="64.81" x2="90.35" y2="70.98" width="0" layer="19" extent="1-1"/>
-<wire x1="46.99" y1="58.1" x2="46.52" y2="64.81" width="0" layer="19" extent="1-1"/>
+<contactref element="S2" pad="1"/>
+<wire x1="46.99" y1="58.1" x2="90.35" y2="70.98" width="0" layer="19" extent="1-1"/>
 <wire x1="24.98" y1="67.31" x2="46.99" y2="58.1" width="0" layer="19" extent="1-1"/>
+<wire x1="5.51" y1="-10.16" x2="46.99" y2="58.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OUTADC">
 <contactref element="IC1" pad="7"/>
