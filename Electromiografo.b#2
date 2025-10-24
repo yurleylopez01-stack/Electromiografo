@@ -141,10 +141,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="100" y2="0" width="0" layer="20"/>
-<wire x1="100" y1="0" x2="100" y2="80" width="0" layer="20"/>
-<wire x1="100" y1="80" x2="0" y2="80" width="0" layer="20"/>
-<wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="-109.22" y1="-13.97" x2="103.81" y2="-13.97" width="0" layer="20"/>
+<wire x1="103.81" y1="-13.97" x2="103.81" y2="104.13" width="0" layer="20"/>
+<wire x1="103.81" y1="104.13" x2="-109.22" y2="104.13" width="0" layer="20"/>
+<wire x1="-109.22" y1="104.13" x2="-109.22" y2="-13.97" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -1986,15 +1986,15 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-52.07" y="69.85" size="1.27" layer="27"/>
 </element>
-<element name="IC1" library="SamacSys_Parts" package="ESP32S3WROOM1N16R8" value="ESP32-S3-WROOM-1-N16R8" x="86.36" y="63.5" smashed="yes">
-<attribute name="DESCRIPTION" value="Multiprotocol Modules SMD Module, ESP32-S3R8, 3.3V, 8 MB Octal PSRAM Die, 16 MB Quad SPI Flash, PCB Antenna" x="111.76" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="HEIGHT" value="3.25mm" x="111.76" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Espressif Systems" x="111.76" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="ESP32-S3-WROOM-1-N16R8" x="111.76" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="356-ESP32S3WRM1N16R8" x="111.76" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Espressif-Systems/ESP32-S3-WROOM-1-N16R8?qs=Li%252BoUPsLEnvQc9gW6AMhZg%3D%3D" x="111.76" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="86.36" y="63.25" size="1.27" layer="25" align="center"/>
-<attribute name="VALUE" x="87.63" y="65.79" size="1.27" layer="27" align="center"/>
+<element name="IC1" library="SamacSys_Parts" package="ESP32S3WROOM1N16R8" value="ESP32-S3-WROOM-1-N16R8" x="36.83" y="83.82" smashed="yes">
+<attribute name="DESCRIPTION" value="Multiprotocol Modules SMD Module, ESP32-S3R8, 3.3V, 8 MB Octal PSRAM Die, 16 MB Quad SPI Flash, PCB Antenna" x="62.23" y="68.58" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="3.25mm" x="62.23" y="68.58" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Espressif Systems" x="62.23" y="68.58" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ESP32-S3-WROOM-1-N16R8" x="62.23" y="68.58" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="356-ESP32S3WRM1N16R8" x="62.23" y="68.58" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Espressif-Systems/ESP32-S3-WROOM-1-N16R8?qs=Li%252BoUPsLEnvQc9gW6AMhZg%3D%3D" x="62.23" y="68.58" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="36.83" y="83.57" size="1.27" layer="25" align="center"/>
+<attribute name="VALUE" x="36.83" y="83.57" size="1.27" layer="27" align="center"/>
 </element>
 <element name="IC2" library="SamacSys_Parts" package="SOT95P270X145-5N" value="MCP73831T-2DCI_OT" x="-22.86" y="77.47" smashed="yes">
 <attribute name="DESCRIPTION" value="Charge Controller Li-Ion/Li-Pol" x="0" y="0" size="1.778" layer="27" display="off"/>
@@ -2101,10 +2101,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-49.85" y="36.43" size="1.27" layer="25" align="center"/>
 <attribute name="VALUE" x="-49.85" y="36.43" size="1.27" layer="27" align="center"/>
 </element>
-<element name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04/90" package3d_urn="urn:adsk.eagle:package:22404/2" value="" x="-19.05" y="49.53" smashed="yes">
-<attribute name="NAME" x="-24.765" y="45.72" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="POPULARITY" value="9" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-12.065" y="45.085" size="1.27" layer="27" rot="R90"/>
+<element name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04/90" package3d_urn="urn:adsk.eagle:package:22404/2" value="" x="39.37" y="52.07" smashed="yes" rot="R90">
+<attribute name="NAME" x="57.785" y="82.55" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="POPULARITY" value="9" x="88.9" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="43.815" y="59.055" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="LED1" library="PulseOximeterECG_AU" library_urn="urn:adsk.eagle:library:14846661" package="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:14846712/2" value="" x="-38.1" y="59.69" smashed="yes">
 <attribute name="NAME" x="-39.37" y="58.42" size="1.27" layer="25" rot="R90"/>
@@ -2176,25 +2176,25 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-15.875" y="69.85" size="1.27" layer="27"/>
 </element>
-<element name="S1" library="SamacSys_Parts" package="PTS125SM73SMTR21MLFS" value="PTS125SM73SMTR21M_LFS" x="86.36" y="39.37" smashed="yes">
-<attribute name="DESCRIPTION" value="Tactile Switch SPST-NO Top Actuated Surface Mount" x="137.16" y="31.75" size="1.778" layer="27" display="off"/>
-<attribute name="HEIGHT" value="7.3mm" x="137.16" y="31.75" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="C &amp; K COMPONENTS" x="137.16" y="31.75" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="PTS125SM73SMTR21M LFS" x="137.16" y="31.75" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="611-PTS125M73SMTRLFS" x="137.16" y="31.75" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/CK/PTS125SM73SMTR21M-LFS?qs=t7xnP681wgVp4NpaUUvA%252Bw%3D%3D" x="137.16" y="31.75" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="86.36" y="39.37" size="1.27" layer="25" align="center"/>
-<attribute name="VALUE" x="86.36" y="39.37" size="1.27" layer="27" align="center"/>
+<element name="S1" library="SamacSys_Parts" package="PTS125SM73SMTR21MLFS" value="PTS125SM73SMTR21M_LFS" x="57.15" y="63.5" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="Tactile Switch SPST-NO Top Actuated Surface Mount" x="64.77" y="114.3" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="HEIGHT" value="7.3mm" x="64.77" y="114.3" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="C &amp; K COMPONENTS" x="64.77" y="114.3" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="PTS125SM73SMTR21M LFS" x="64.77" y="114.3" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="611-PTS125M73SMTRLFS" x="64.77" y="114.3" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/CK/PTS125SM73SMTR21M-LFS?qs=t7xnP681wgVp4NpaUUvA%252Bw%3D%3D" x="64.77" y="114.3" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="57.15" y="63.5" size="1.27" layer="25" rot="R90" align="center"/>
+<attribute name="VALUE" x="57.15" y="63.5" size="1.27" layer="27" rot="R90" align="center"/>
 </element>
-<element name="S2" library="SamacSys_Parts" package="PTS125SM73SMTR21MLFS" value="PTS125SM73SMTR21M_LFS" x="52.07" y="72.39" smashed="yes">
-<attribute name="DESCRIPTION" value="Tactile Switch SPST-NO Top Actuated Surface Mount" x="77.47" y="35.56" size="1.778" layer="27" display="off"/>
-<attribute name="HEIGHT" value="7.3mm" x="77.47" y="35.56" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="C &amp; K COMPONENTS" x="77.47" y="35.56" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="PTS125SM73SMTR21M LFS" x="77.47" y="35.56" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="611-PTS125M73SMTRLFS" x="77.47" y="35.56" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/CK/PTS125SM73SMTR21M-LFS?qs=t7xnP681wgVp4NpaUUvA%252Bw%3D%3D" x="77.47" y="35.56" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="52.07" y="72.39" size="1.27" layer="25" align="center"/>
-<attribute name="VALUE" x="52.07" y="73.66" size="1.27" layer="27" align="center"/>
+<element name="S2" library="SamacSys_Parts" package="PTS125SM73SMTR21MLFS" value="PTS125SM73SMTR21M_LFS" x="58.42" y="91.44" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="Tactile Switch SPST-NO Top Actuated Surface Mount" x="33.02" y="128.27" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="7.3mm" x="33.02" y="128.27" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="C &amp; K COMPONENTS" x="33.02" y="128.27" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="PTS125SM73SMTR21M LFS" x="33.02" y="128.27" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="611-PTS125M73SMTRLFS" x="33.02" y="128.27" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/CK/PTS125SM73SMTR21M-LFS?qs=t7xnP681wgVp4NpaUUvA%252Bw%3D%3D" x="33.02" y="128.27" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="58.42" y="91.44" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="58.42" y="91.44" size="1.27" layer="27" rot="R180" align="center"/>
 </element>
 </elements>
 <signals>
@@ -2235,20 +2235,32 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="42"/>
 <contactref element="IC1" pad="41"/>
 <contactref element="IC1" pad="40"/>
-<wire x1="-24.11" y1="77.47" x2="-22.84" y2="81.28" width="0" layer="19" extent="1-1"/>
-<wire x1="-24.45" y1="72.39" x2="-24.11" y2="77.47" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.01" y1="68.58" x2="-24.45" y2="72.39" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.36" y1="68.58" x2="-22.01" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="-19.37" y1="72.39" x2="-17.36" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.75" y1="63.635" x2="-17.36" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.85" y1="63.41" x2="-17.75" y2="63.635" width="0" layer="19" extent="1-1"/>
+<wire x1="45.58" y1="89.08" x2="51.27" y2="88.94" width="0" layer="19" extent="1-1"/>
+<wire x1="36.73" y1="82.76" x2="45.58" y2="89.08" width="0" layer="19" extent="1-1"/>
+<wire x1="36.73" y1="81.36" x2="36.73" y2="82.76" width="0" layer="19" extent="1-1"/>
+<wire x1="35.33" y1="82.76" x2="36.73" y2="82.76" width="0" layer="19" extent="1-1"/>
+<wire x1="36.73" y1="79.96" x2="36.73" y2="81.36" width="0" layer="19" extent="1-1"/>
+<wire x1="33.93" y1="82.76" x2="35.33" y2="82.76" width="0" layer="19" extent="1-1"/>
+<wire x1="33.93" y1="81.36" x2="33.93" y2="82.76" width="0" layer="19" extent="1-1"/>
+<wire x1="35.33" y1="81.36" x2="36.73" y2="81.36" width="0" layer="19" extent="1-1"/>
+<wire x1="35.33" y1="79.96" x2="36.73" y2="79.96" width="0" layer="19" extent="1-1"/>
+<wire x1="33.93" y1="79.96" x2="33.93" y2="81.36" width="0" layer="19" extent="1-1"/>
+<wire x1="28.08" y1="89.08" x2="33.93" y2="82.76" width="0" layer="19" extent="1-1"/>
+<wire x1="59.65" y1="70.65" x2="33.93" y2="79.96" width="0" layer="19" extent="1-1"/>
+<wire x1="43.18" y1="55.88" x2="36.73" y2="79.96" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.85" y1="63.41" x2="59.65" y2="70.65" width="0" layer="19" extent="1-1"/>
+<wire x1="-17.75" y1="63.635" x2="-15.85" y2="63.41" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.3" y1="60.96" x2="-15.85" y2="63.41" width="0" layer="19" extent="1-1"/>
 <wire x1="-17.9" y1="60.96" x2="-15.3" y2="60.96" width="0" layer="19" extent="1-1"/>
 <wire x1="-20.2" y1="60.96" x2="-17.9" y2="60.96" width="0" layer="19" extent="1-1"/>
 <wire x1="-22.8" y1="60.96" x2="-20.2" y2="60.96" width="0" layer="19" extent="1-1"/>
 <wire x1="-22.25" y1="63.41" x2="-22.8" y2="60.96" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.24" y1="45.72" x2="-15.3" y2="60.96" width="0" layer="19" extent="1-1"/>
-<wire x1="59.22" y1="74.89" x2="-15.24" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="-17.36" y1="68.58" x2="-17.75" y2="63.635" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.37" y1="72.39" x2="-17.36" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="-22.01" y1="68.58" x2="-17.36" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="-24.45" y1="72.39" x2="-22.01" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="-24.11" y1="77.47" x2="-24.45" y2="72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="-22.84" y1="81.28" x2="-24.11" y2="77.47" width="0" layer="19" extent="1-1"/>
 <wire x1="-39.35" y1="81.28" x2="-24.11" y2="77.47" width="0" layer="19" extent="1-1"/>
 <wire x1="-41.89" y1="77.47" x2="-39.35" y2="81.28" width="0" layer="19" extent="1-1"/>
 <wire x1="-49.21" y1="67.31" x2="-41.89" y2="77.47" width="0" layer="19" extent="1-1"/>
@@ -2258,18 +2270,6 @@ design rules under a new name.</description>
 <wire x1="-66.89" y1="59.69" x2="-54.07" y2="59.69" width="0" layer="19" extent="1-1"/>
 <wire x1="-58.4" y1="77.47" x2="-49.21" y2="67.31" width="0" layer="19" extent="1-1"/>
 <wire x1="-61.915" y1="72.685" x2="-58.4" y2="77.47" width="0" layer="19" extent="1-1"/>
-<wire x1="95.11" y1="68.76" x2="59.22" y2="74.89" width="0" layer="19" extent="1-1"/>
-<wire x1="86.26" y1="62.44" x2="95.11" y2="68.76" width="0" layer="19" extent="1-1"/>
-<wire x1="84.86" y1="62.44" x2="86.26" y2="62.44" width="0" layer="19" extent="1-1"/>
-<wire x1="83.46" y1="62.44" x2="84.86" y2="62.44" width="0" layer="19" extent="1-1"/>
-<wire x1="83.46" y1="61.04" x2="83.46" y2="62.44" width="0" layer="19" extent="1-1"/>
-<wire x1="83.46" y1="59.64" x2="83.46" y2="61.04" width="0" layer="19" extent="1-1"/>
-<wire x1="84.86" y1="59.64" x2="83.46" y2="59.64" width="0" layer="19" extent="1-1"/>
-<wire x1="86.26" y1="59.64" x2="84.86" y2="59.64" width="0" layer="19" extent="1-1"/>
-<wire x1="86.26" y1="61.04" x2="86.26" y2="62.44" width="0" layer="19" extent="1-1"/>
-<wire x1="84.86" y1="61.04" x2="84.86" y2="62.44" width="0" layer="19" extent="1-1"/>
-<wire x1="77.61" y1="68.76" x2="83.46" y2="62.44" width="0" layer="19" extent="1-1"/>
-<wire x1="93.51" y1="36.87" x2="83.46" y2="59.64" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="IC3" pad="5"/>
@@ -2279,9 +2279,9 @@ design rules under a new name.</description>
 <contactref element="S1" pad="B1"/>
 <contactref element="C11" pad="1"/>
 <contactref element="IC1" pad="26"/>
+<wire x1="54.65" y1="70.65" x2="43.815" y2="71.32" width="0" layer="19" extent="1-1"/>
+<wire x1="-23.71" y1="68.58" x2="54.65" y2="70.65" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.16" y1="60.96" x2="-23.71" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="93.51" y1="41.87" x2="-30.16" y2="60.96" width="0" layer="19" extent="1-1"/>
-<wire x1="93.345" y1="51" x2="93.51" y2="41.87" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="R1" pad="2"/>
@@ -2295,6 +2295,8 @@ design rules under a new name.</description>
 <contactref element="IC7" pad="5"/>
 <contactref element="IC8" pad="5"/>
 <contactref element="IC9" pad="7"/>
+<wire x1="43.18" y1="53.34" x2="28.08" y2="87.81" width="0" layer="19" extent="1-1"/>
+<wire x1="-20.34" y1="82.23" x2="28.08" y2="87.81" width="0" layer="19" extent="1-1"/>
 <wire x1="-36.85" y1="80.33" x2="-20.34" y2="82.23" width="0" layer="19" extent="1-1"/>
 <wire x1="-39.39" y1="78.42" x2="-36.85" y2="80.33" width="0" layer="19" extent="1-1"/>
 <wire x1="-55.9" y1="78.42" x2="-39.39" y2="78.42" width="0" layer="19" extent="1-1"/>
@@ -2303,17 +2305,15 @@ design rules under a new name.</description>
 <wire x1="-55.12" y1="47.51" x2="-65.19" y2="59.69" width="0" layer="19" extent="1-1"/>
 <wire x1="-33.34" y1="60.96" x2="-39.39" y2="78.42" width="0" layer="19" extent="1-1"/>
 <wire x1="-28.26" y1="60.96" x2="-33.34" y2="60.96" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.78" y1="45.72" x2="-28.26" y2="60.96" width="0" layer="19" extent="1-1"/>
-<wire x1="77.61" y1="67.49" x2="-17.78" y2="45.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R2" pad="1"/>
 <contactref element="S2" pad="D1"/>
 <contactref element="C2" pad="2"/>
 <contactref element="IC1" pad="3"/>
+<wire x1="28.08" y1="86.54" x2="51.27" y2="93.94" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.66" y1="68.58" x2="28.08" y2="86.54" width="0" layer="19" extent="1-1"/>
 <wire x1="-35.24" y1="60.96" x2="-15.66" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="59.22" y1="69.89" x2="-35.24" y2="60.96" width="0" layer="19" extent="1-1"/>
-<wire x1="77.61" y1="66.22" x2="59.22" y2="69.89" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="IC1" pad="7"/>

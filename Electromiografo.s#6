@@ -9633,8 +9633,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="170.18" y="144.78" size="1.778" layer="95" grouprefs="SP32">SCL</text>
 <text x="170.18" y="147.32" size="1.778" layer="95" grouprefs="SP32">TX</text>
 <text x="170.18" y="149.86" size="1.778" layer="95" grouprefs="SP32">RX</text>
-<text x="170.18" y="152.4" size="1.778" layer="91" grouprefs="SP32">SDA</text>
-<text x="170.18" y="152.4" size="1.778" layer="95" grouprefs="SP32">SDA</text>
 <text x="93.98" y="134.62" size="1.778" layer="95" rot="R90" grouprefs="SP32">REST</text>
 <text x="91.44" y="165.1" size="1.778" layer="95" grouprefs="SP32">RESET32</text>
 <text x="223.52" y="127" size="1.778" layer="95" grouprefs="IMAGEN">OLED</text>
@@ -10252,10 +10250,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="127" y1="114.3" x2="109.22" y2="114.3" width="0.1524" layer="91" grouprefs="SP32"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="SDA" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="IO21"/>
 <wire x1="165.1" y1="152.4" x2="180.34" y2="152.4" width="0.1524" layer="91" grouprefs="SP32"/>
+<label x="170.18" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$17" class="0">
