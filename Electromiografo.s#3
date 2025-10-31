@@ -10046,7 +10046,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="IC1" gate="G$1" pin="GND_1"/>
 </segment>
 <segment>
-<wire x1="86.36" y1="149.86" x2="86.36" y2="157.48" width="0.1524" layer="91" grouprefs="SP32"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="86.36" y1="157.48" x2="73.66" y2="157.48" width="0.1524" layer="91" grouprefs="SP32"/>
 <wire x1="73.66" y1="157.48" x2="73.66" y2="142.24" width="0.1524" layer="91" grouprefs="SP32"/>
@@ -10055,6 +10054,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="73.66" y1="167.64" x2="73.66" y2="157.48" width="0.1524" layer="91" grouprefs="SP32"/>
 <junction x="73.66" y="157.48" grouprefs="SP32"/>
 <pinref part="S2" gate="G$1" pin="NO"/>
+<wire x1="86.36" y1="149.86" x2="86.36" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -10299,11 +10299,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="88.9" y1="172.72" x2="88.9" y2="167.64" width="0.1524" layer="91" grouprefs="SP32"/>
 <wire x1="88.9" y1="167.64" x2="127" y2="167.64" width="0.1524" layer="91" grouprefs="SP32"/>
 <junction x="88.9" y="167.64" grouprefs="SP32"/>
-<wire x1="88.9" y1="149.86" x2="88.9" y2="167.64" width="0.1524" layer="91" grouprefs="SP32"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="167.64" x2="88.9" y2="167.64" width="0.1524" layer="91" grouprefs="SP32"/>
 <pinref part="IC1" gate="G$1" pin="EN"/>
 <pinref part="S2" gate="G$1" pin="COM"/>
+<wire x1="88.9" y1="149.86" x2="88.9" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="OUTADC" class="0">

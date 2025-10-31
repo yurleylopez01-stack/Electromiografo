@@ -10023,7 +10023,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <nets>
 <net name="GND" class="0">
 <segment>
-<wire x1="198.12" y1="162.56" x2="198.12" y2="172.72" width="0.1524" layer="91" grouprefs="SP32"/>
 <wire x1="198.12" y1="172.72" x2="208.28" y2="172.72" width="0.1524" layer="91" grouprefs="SP32"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="208.28" y1="172.72" x2="208.28" y2="170.18" width="0.1524" layer="91" grouprefs="SP32"/>
@@ -10032,6 +10031,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="205.74" y1="180.34" x2="208.28" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="180.34" x2="208.28" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="S1" gate="G$1" pin="COM"/>
+<wire x1="198.12" y1="162.56" x2="198.12" y2="172.72" width="0.1524" layer="91"/>
+<junction x="198.12" y="172.72"/>
 </segment>
 <segment>
 <wire x1="127" y1="172.72" x2="124.46" y2="172.72" width="0.1524" layer="91" grouprefs="SP32"/>
@@ -10219,13 +10220,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="160.02" y1="172.72" x2="195.58" y2="172.72" width="0.1524" layer="91" grouprefs="SP32"/>
 <wire x1="195.58" y1="172.72" x2="195.58" y2="180.34" width="0.1524" layer="91" grouprefs="SP32"/>
 <wire x1="195.58" y1="180.34" x2="195.58" y2="187.96" width="0.1524" layer="91" grouprefs="SP32"/>
-<wire x1="195.58" y1="172.72" x2="195.58" y2="162.56" width="0.1524" layer="91" grouprefs="SP32"/>
-<junction x="195.58" y="172.72" grouprefs="SP32"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="198.12" y1="180.34" x2="195.58" y2="180.34" width="0.1524" layer="91"/>
 <junction x="195.58" y="180.34"/>
 <pinref part="IC1" gate="G$1" pin="IO45"/>
 <pinref part="S1" gate="G$1" pin="NO"/>
+<wire x1="195.58" y1="162.56" x2="195.58" y2="172.72" width="0.1524" layer="91"/>
+<junction x="195.58" y="172.72"/>
 </segment>
 </net>
 <net name="+3V3" class="0">

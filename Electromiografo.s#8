@@ -9709,7 +9709,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <sheet>
 <plain>
 <text x="203.2" y="144.78" size="1.778" layer="95" rot="R90" grouprefs="SP32">FLASH</text>
-<text x="109.22" y="157.48" size="1.778" layer="95" grouprefs="SP32">OUTADC</text>
 <text x="109.22" y="149.86" size="1.778" layer="95" grouprefs="SP32">DAC1</text>
 <text x="109.22" y="147.32" size="1.778" layer="95" grouprefs="SP32">DAC2</text>
 <text x="109.22" y="144.78" size="1.778" layer="95" grouprefs="SP32">TOUCHPAD1</text>
@@ -9748,7 +9747,6 @@ In this library the device names are the same as the pin names of the symbols, t
 5. Reemplazar el ESP32 por un ESP32-S3(listo)
 6. Verificar el SW(listo)</text>
 <text x="368.3" y="248.92" size="1.778" layer="94">7. Verificar el conector JST de la bateria</text>
-<text x="505.46" y="104.14" size="1.778" layer="95">OUTADC</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="162.56" y="106.68" smashed="yes" grouprefs="SP32">
@@ -10318,10 +10316,21 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="IC1" gate="G$1" pin="EN"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="OUTADC" class="0">
 <segment>
 <wire x1="127" y1="157.48" x2="106.68" y2="157.48" width="0.1524" layer="91" grouprefs="SP32"/>
 <pinref part="IC1" gate="G$1" pin="IO7"/>
+<label x="109.22" y="157.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="480.06" y1="119.38" x2="500.38" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="500.38" y1="119.38" x2="500.38" y2="104.14" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<pinref part="IC10" gate="G$1" pin="OUT"/>
+<wire x1="500.38" y1="104.14" x2="497.84" y2="104.14" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="500.38" y1="104.14" x2="513.08" y2="104.14" width="0.1524" layer="91"/>
+<junction x="500.38" y="104.14"/>
+<label x="505.46" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -10732,17 +10741,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <junction x="469.9" y="99.06" grouprefs="FILTRO"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="469.9" y1="88.9" x2="469.9" y2="99.06" width="0.1524" layer="91" grouprefs="FILTRO"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="480.06" y1="119.38" x2="500.38" y2="119.38" width="0.1524" layer="91" grouprefs="FILTRO"/>
-<wire x1="500.38" y1="119.38" x2="500.38" y2="104.14" width="0.1524" layer="91" grouprefs="FILTRO"/>
-<pinref part="IC10" gate="G$1" pin="OUT"/>
-<wire x1="500.38" y1="104.14" x2="497.84" y2="104.14" width="0.1524" layer="91" grouprefs="FILTRO"/>
-<wire x1="500.38" y1="104.14" x2="515.62" y2="104.14" width="0.1524" layer="91"/>
-<junction x="500.38" y="104.14"/>
 </segment>
 </net>
 </nets>
