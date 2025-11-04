@@ -9997,14 +9997,14 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="2"/>
-<wire x1="185.42" y1="78.74" x2="172.72" y2="78.74" width="0.1524" layer="91" grouprefs="IMAGEN"/>
-<label x="172.72" y="78.74" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="IC1" gate="G$1" pin="IO2"/>
 <wire x1="160.02" y1="142.24" x2="180.34" y2="142.24" width="0.1524" layer="91"/>
 <label x="172.72" y="142.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="1"/>
+<wire x1="185.42" y1="81.28" x2="172.72" y2="81.28" width="0.1524" layer="91"/>
+<label x="172.72" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -10365,9 +10365,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="172.72" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
-<wire x1="185.42" y1="81.28" x2="172.72" y2="81.28" width="0.1524" layer="91"/>
-<label x="172.72" y="81.28" size="1.778" layer="95"/>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="185.42" y1="78.74" x2="172.72" y2="78.74" width="0.1524" layer="91" grouprefs="IMAGEN"/>
+<label x="172.72" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TOUCHPAD1" class="0">

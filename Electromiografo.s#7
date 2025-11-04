@@ -10457,9 +10457,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
 <label x="340.36" y="200.66" size="1.778" layer="95"/>
+<wire x1="337.82" y1="200.66" x2="337.82" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="347.98" y1="200.66" x2="337.82" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="200.66" x2="337.82" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="556.26" y="-127" size="1.778" layer="95" rot="R270"/>
