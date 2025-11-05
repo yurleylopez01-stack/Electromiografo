@@ -468,6 +468,26 @@
 <wire x1="-1.5" y1="1.25" x2="1.5" y2="1.25" width="0.2" layer="21"/>
 <wire x1="-1.5" y1="-1.25" x2="1.5" y2="-1.25" width="0.2" layer="21"/>
 </package>
+<package name="LEDC2012X90N">
+<description>&lt;b&gt;HSMW-C170-U0000&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-0.95" y="0" dx="1.4" dy="0.95" layer="1" rot="R90"/>
+<smd name="2" x="0.95" y="0" dx="1.4" dy="0.95" layer="1" rot="R90"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.875" y1="1.15" x2="1.875" y2="1.15" width="0.05" layer="51"/>
+<wire x1="1.875" y1="1.15" x2="1.875" y2="-1.15" width="0.05" layer="51"/>
+<wire x1="1.875" y1="-1.15" x2="-1.875" y2="-1.15" width="0.05" layer="51"/>
+<wire x1="-1.875" y1="-1.15" x2="-1.875" y2="1.15" width="0.05" layer="51"/>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.1" layer="51"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.1" layer="51"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.1" layer="51"/>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.1" layer="51"/>
+<wire x1="-1" y1="0.208" x2="-0.583" y2="0.625" width="0.1" layer="51"/>
+<wire x1="0.95" y1="1.05" x2="-1.775" y2="1.05" width="0.2" layer="21"/>
+<wire x1="-1.775" y1="1.05" x2="-1.775" y2="-1.05" width="0.2" layer="21"/>
+<wire x1="-1.775" y1="-1.05" x2="0.95" y2="-1.05" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="1981584-1">
@@ -646,6 +666,32 @@
 <text x="19.05" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
 <pin name="COM" x="0" y="-2.54" length="middle"/>
 <pin name="NO" x="0" y="0" length="middle"/>
+</symbol>
+<symbol name="HSMW-C170-U0000">
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="6.35" y1="2.54" x2="3.81" y2="5.08" width="0.254" layer="94"/>
+<wire x1="8.89" y1="2.54" x2="6.35" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
+<text x="12.7" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="12.7" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="K" x="0" y="0" visible="pad" length="short"/>
+<pin name="A" x="15.24" y="0" visible="pad" length="short" rot="R180"/>
+<polygon width="0.254" layer="94">
+<vertex x="5.08" y="0"/>
+<vertex x="10.16" y="2.54"/>
+<vertex x="10.16" y="-2.54"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="5.334" y="4.318"/>
+<vertex x="4.572" y="3.556"/>
+<vertex x="3.81" y="5.08"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="7.874" y="4.318"/>
+<vertex x="7.112" y="3.556"/>
+<vertex x="6.35" y="5.08"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -971,6 +1017,31 @@ Source: &lt;a href="https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf"
 <attribute name="MANUFACTURER_PART_NUMBER" value="B3U-1000PM" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="653-B3U-1000PM" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3U-1000PM?qs=hnUcNC2tU0oiJUWqjOlHqA%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HSMW-C170-U0000" prefix="LED">
+<description>&lt;b&gt;BROADCOM LIMITED - HSMW-C170-U0000 - LED, WHITE, 670MCD, 0805&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/HSMW-C170-U0000.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="HSMW-C170-U0000" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LEDC2012X90N">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="K" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="BROADCOM LIMITED - HSMW-C170-U0000 - LED, WHITE, 670MCD, 0805" constant="no"/>
+<attribute name="HEIGHT" value="0.9mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Avago Technologies" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="HSMW-C170-U0000" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="630-HSMW-C170-U0000" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Broadcom-Avago/HSMW-C170-U0000?qs=tMOYG%252Bw4%252BLwGyeHODzQdug%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9331,11 +9402,16 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
 <part name="GND17" library="PulseOximeterECG_AU" library_urn="urn:adsk.eagle:library:14846661" deviceset="GND" device=""/>
 <part name="+3V12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="GND18" library="PulseOximeterECG_AU" library_urn="urn:adsk.eagle:library:14846661" deviceset="GND" device=""/>
 <part name="CBAT" library="SamacSys_Parts" deviceset="1769" device=""/>
-<part name="S1" library="SamacSys_Parts" deviceset="B3U-1000PM" device=""/>
-<part name="S2" library="SamacSys_Parts" deviceset="B3U-1000PM" device=""/>
+<part name="FLASH" library="SamacSys_Parts" deviceset="B3U-1000PM" device=""/>
+<part name="RESET" library="SamacSys_Parts" deviceset="B3U-1000PM" device=""/>
 <part name="S3-1" library="PCM13SMTR" deviceset="PCM13SMTR" device=""/>
+<part name="VSS6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VSS" device=""/>
+<part name="LED1" library="SamacSys_Parts" deviceset="HSMW-C170-U0000" device=""/>
+<part name="LED2" library="SamacSys_Parts" deviceset="HSMW-C170-U0000" device=""/>
+<part name="LED3" library="SamacSys_Parts" deviceset="HSMW-C170-U0000" device=""/>
+<part name="GND18" library="PulseOximeterECG_AU" library_urn="urn:adsk.eagle:library:14846661" deviceset="GND" device=""/>
+<part name="GND19" library="PulseOximeterECG_AU" library_urn="urn:adsk.eagle:library:14846661" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9618,30 +9694,48 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="NAME" x="471.3986" y="87.63" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="466.598" y="87.63" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND17" gate="1" x="469.9" y="73.66" smashed="yes" grouprefs="FILTRO">
-<attribute name="VALUE" x="467.36" y="71.12" size="1.778" layer="96"/>
+<instance part="GND17" gate="1" x="462.28" y="73.66" smashed="yes" grouprefs="FILTRO">
+<attribute name="VALUE" x="459.74" y="71.12" size="1.778" layer="96"/>
 </instance>
 <instance part="+3V12" gate="G$1" x="505.46" y="101.6" smashed="yes" rot="R270" grouprefs="FILTRO">
 <attribute name="VALUE" x="502.92" y="96.52" size="1.778" layer="96"/>
-</instance>
-<instance part="GND18" gate="1" x="462.28" y="81.28" smashed="yes" grouprefs="FILTRO">
-<attribute name="VALUE" x="459.74" y="78.74" size="1.778" layer="96"/>
 </instance>
 <instance part="CBAT" gate="G$1" x="347.98" y="200.66" smashed="yes">
 <attribute name="NAME" x="364.49" y="208.28" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="364.49" y="205.74" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="S1" gate="G$1" x="195.58" y="162.56" smashed="yes" rot="MR270">
+<instance part="FLASH" gate="G$1" x="195.58" y="162.56" smashed="yes" rot="MR270">
 <attribute name="NAME" x="187.96" y="151.13" size="1.778" layer="95" rot="MR270" align="center-left"/>
 <attribute name="VALUE" x="190.5" y="153.67" size="1.778" layer="96" rot="MR270" align="center-left"/>
 </instance>
-<instance part="S2" gate="G$1" x="86.36" y="149.86" smashed="yes" rot="MR270">
+<instance part="RESET" gate="G$1" x="86.36" y="149.86" smashed="yes" rot="MR270">
 <attribute name="NAME" x="78.74" y="140.97" size="1.778" layer="95" rot="MR270" align="center-left"/>
 <attribute name="VALUE" x="81.28" y="140.97" size="1.778" layer="96" rot="MR270" align="center-left"/>
 </instance>
 <instance part="S3-1" gate="G$1" x="246.38" y="157.48" smashed="yes" rot="R180">
 <attribute name="NAME" x="251.46978125" y="152.39021875" size="1.27245" layer="95" rot="R180"/>
 <attribute name="VALUE" x="251.46605" y="165.10906875" size="1.271509375" layer="96" rot="R180"/>
+</instance>
+<instance part="VSS6" gate="G$1" x="469.9" y="73.66" smashed="yes">
+<attribute name="VALUE" x="467.36" y="68.58" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="LED1" gate="G$1" x="297.18" y="196.85" smashed="yes" rot="R90">
+<attribute name="NAME" x="288.29" y="209.55" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="290.83" y="209.55" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="LED2" gate="G$1" x="88.9" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="80.01" y="111.76" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="82.55" y="111.76" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="LED3" gate="G$1" x="106.68" y="111.76" smashed="yes">
+<attribute name="NAME" x="119.38" y="120.65" size="1.778" layer="95"/>
+<attribute name="VALUE" x="119.38" y="118.11" size="1.778" layer="96"/>
+</instance>
+<instance part="GND18" gate="1" x="88.9" y="93.98" smashed="yes">
+<attribute name="VALUE" x="86.36" y="91.44" size="1.778" layer="96"/>
+</instance>
+<instance part="GND19" gate="1" x="106.68" y="106.68" smashed="yes">
+<attribute name="VALUE" x="104.14" y="104.14" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -9656,7 +9750,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="C11" gate="G$1" pin="2"/>
 <wire x1="205.74" y1="180.34" x2="208.28" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="180.34" x2="208.28" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="COM"/>
+<pinref part="FLASH" gate="G$1" pin="COM"/>
 <wire x1="198.12" y1="162.56" x2="198.12" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -9679,7 +9773,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="76.2" y1="167.64" x2="73.66" y2="167.64" width="0.1524" layer="91" grouprefs="SP32"/>
 <wire x1="73.66" y1="167.64" x2="73.66" y2="154.94" width="0.1524" layer="91" grouprefs="SP32"/>
 <junction x="73.66" y="154.94" grouprefs="SP32"/>
-<pinref part="S2" gate="G$1" pin="NO"/>
+<pinref part="RESET" gate="G$1" pin="NO"/>
 <wire x1="86.36" y1="149.86" x2="86.36" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -9826,32 +9920,37 @@ In this library the device names are the same as the pin names of the symbols, t
 <junction x="162.56" y="134.62"/>
 </segment>
 <segment>
-<pinref part="R13" gate="G$1" pin="2"/>
-<pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="469.9" y1="78.74" x2="469.9" y2="76.2" width="0.1524" layer="91" grouprefs="FILTRO"/>
-</segment>
-<segment>
 <pinref part="IC10" gate="G$1" pin="GND"/>
 <wire x1="469.9" y1="101.6" x2="467.36" y2="101.6" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <wire x1="467.36" y1="101.6" x2="467.36" y2="93.98" width="0.1524" layer="91" grouprefs="FILTRO"/>
 <wire x1="467.36" y1="93.98" x2="462.28" y2="93.98" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<wire x1="462.28" y1="93.98" x2="462.28" y2="76.2" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND19" gate="1" pin="GND"/>
+<pinref part="LED3" gate="G$1" pin="K"/>
+<wire x1="106.68" y1="109.22" x2="106.68" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="462.28" y1="93.98" x2="462.28" y2="83.82" width="0.1524" layer="91" grouprefs="FILTRO"/>
+<pinref part="LED2" gate="G$1" pin="K"/>
+<wire x1="88.9" y1="96.52" x2="88.9" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="160.02" y1="172.72" x2="195.58" y2="172.72" width="0.1524" layer="91" grouprefs="SP32"/>
-<wire x1="195.58" y1="172.72" x2="195.58" y2="180.34" width="0.1524" layer="91" grouprefs="SP32"/>
 <wire x1="195.58" y1="180.34" x2="195.58" y2="185.42" width="0.1524" layer="91" grouprefs="SP32"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="198.12" y1="180.34" x2="195.58" y2="180.34" width="0.1524" layer="91"/>
 <junction x="195.58" y="180.34"/>
-<pinref part="ESP32" gate="G$1" pin="IO45"/>
-<pinref part="S1" gate="G$1" pin="NO"/>
-<wire x1="195.58" y1="162.56" x2="195.58" y2="172.72" width="0.1524" layer="91"/>
-<junction x="195.58" y="172.72"/>
+<pinref part="FLASH" gate="G$1" pin="NO"/>
+<wire x1="195.58" y1="162.56" x2="195.58" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="ESP32" gate="G$1" pin="IO0"/>
+<wire x1="195.58" y1="170.18" x2="195.58" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="170.18" x2="195.58" y2="170.18" width="0.1524" layer="91"/>
+<junction x="195.58" y="170.18"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -9928,7 +10027,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="167.64" x2="88.9" y2="167.64" width="0.1524" layer="91" grouprefs="SP32"/>
 <pinref part="ESP32" gate="G$1" pin="EN"/>
-<pinref part="S2" gate="G$1" pin="COM"/>
+<pinref part="RESET" gate="G$1" pin="COM"/>
 <wire x1="88.9" y1="149.86" x2="88.9" y2="167.64" width="0.1524" layer="91"/>
 <label x="109.22" y="167.64" size="1.778" layer="95"/>
 </segment>
@@ -9993,10 +10092,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <junction x="297.18" y="213.36"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="297.18" y1="215.9" x2="297.18" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="297.18" y1="198.12" x2="297.142203125" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="297.142203125" y1="198.12" x2="297.142203125" y2="195.790640625" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="213.36" x2="297.18" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<wire x1="297.18" y1="212.09" x2="297.18" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+3" gate="1" pin="+5V"/>
@@ -10090,6 +10187,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="457.2" y1="200.66" x2="467.36" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="VSS5" gate="G$1" pin="VSS"/>
 <wire x1="467.36" y1="195.58" x2="467.36" y2="200.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="VSS6" gate="G$1" pin="VSS"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="469.9" y1="76.2" x2="469.9" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -10356,6 +10458,28 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="ESP32" gate="G$1" pin="IO18"/>
 <wire x1="127" y1="147.32" x2="106.68" y2="147.32" width="0.1524" layer="91"/>
 <label x="109.22" y="147.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="LED1" gate="G$1" pin="K"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="297.18" y1="196.85" x2="297.18" y2="195.790640625" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="195.790640625" x2="297.142203125" y2="195.790640625" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="ESP32" gate="G$1" pin="IO48"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="127" y1="111.76" x2="121.92" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="ESP32" gate="G$1" pin="IO47"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="127" y1="114.3" x2="88.9" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
